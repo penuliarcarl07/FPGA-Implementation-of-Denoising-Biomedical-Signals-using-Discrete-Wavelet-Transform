@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Mon Apr 22 13:35:57 2024
+Quartus II 32-bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Revision Name : DWT_sym4_2_Level
+Top-level Entity Name : DWT_sym4_2_Level
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 4694
+Total pins : 36
+Total virtual pins : 0
+Total block memory bits : 0
+Total DSP Blocks : 76
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI TX Channels : 0
+Total PLLs : 0
+Total DLLs : 0

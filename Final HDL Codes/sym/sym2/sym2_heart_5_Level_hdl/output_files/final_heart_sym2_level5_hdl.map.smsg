@@ -1,0 +1,5 @@
+Warning (10273): Verilog HDL warning at DWT_Sym2_Level5_tb.v(133): extended using "x" or "z"
+Warning (10268): Verilog HDL information at DWT_Sym2_Level5_tb.v(130): always construct contains both blocking and non-blocking assignments
+Warning (10273): Verilog HDL warning at DWT_Sym2_Level5_tb.v(144): extended using "x" or "z"
+Warning (10273): Verilog HDL warning at DWT_Sym2_Level5_tb.v(284): extended using "x" or "z"
+Warning (10268): Verilog HDL information at DWT_Sym2_Level5_tb.v(281): always construct contains both blocking and non-blocking assignments

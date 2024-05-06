@@ -1,0 +1,19 @@
+Fitter Status : Successful - Wed Apr 17 12:09:57 2024
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Revision Name : DWT_Sym2_Level3
+Top-level Entity Name : DWT_Sym2_Level3
+Family : Cyclone V
+Device : 5CSXFC6D6F31C6
+Timing Models : Preliminary
+Logic utilization (in ALMs) : 4,052 / 41,910 ( 10 % )
+Total registers : 8009
+Total pins : 36 / 499 ( 7 % )
+Total virtual pins : 0
+Total block memory bits : 0 / 5,662,720 ( 0 % )
+Total DSP Blocks : 65 / 112 ( 58 % )
+Total HSSI RX PCSs : 0 / 9 ( 0 % )
+Total HSSI PMA RX Deserializers : 0 / 9 ( 0 % )
+Total HSSI TX PCSs : 0 / 9 ( 0 % )
+Total HSSI TX Channels : 0 / 9 ( 0 % )
+Total PLLs : 0 / 15 ( 0 % )
+Total DLLs : 0 / 4 ( 0 % )

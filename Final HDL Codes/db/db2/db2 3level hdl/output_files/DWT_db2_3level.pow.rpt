@@ -1,0 +1,618 @@
+PowerPlay Power Analyzer report for DWT_db2_3level
+Wed Apr 17 20:25:56 2024
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Parallel Compilation
+  3. PowerPlay Power Analyzer Summary
+  4. PowerPlay Power Analyzer Settings
+  5. Indeterminate Toggle Rates
+  6. Operating Conditions Used
+  7. Thermal Power Dissipation by Block
+  8. Thermal Power Dissipation by Block Type
+  9. Thermal Power Dissipation by Hierarchy
+ 10. Core Dynamic Thermal Power Dissipation by Clock Domain
+ 11. Current Drawn from Voltage Supplies Summary
+ 12. VCCIO Supply Current Drawn by I/O Bank
+ 13. VCCIO Supply Current Drawn by Voltage
+ 14. VCCPD Supply Current Drawn by I/O Bank
+ 15. VCCPD Supply Current Drawn by Voltage
+ 16. VCCIO_HPS Supply Current Drawn by I/O Bank
+ 17. VCCIO_HPS Supply Current Drawn by Voltage
+ 18. VCCPD_HPS Supply Current Drawn by I/O Bank
+ 19. VCCPD_HPS Supply Current Drawn by Voltage
+ 20. Confidence Metric Details
+ 21. Signal Activities
+ 22. PowerPlay Power Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 2           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.23        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;  23.1%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------+
+; PowerPlay Power Analyzer Summary                                                          ;
++----------------------------------------+--------------------------------------------------+
+; PowerPlay Power Analyzer Status        ; Successful - Wed Apr 17 20:25:55 2024            ;
+; Quartus II 64-Bit Version              ; 13.1.0 Build 162 10/23/2013 SJ Web Edition       ;
+; Revision Name                          ; DWT_db2_3level                                   ;
+; Top-level Entity Name                  ; DWT_db2_3level                                   ;
+; Family                                 ; Cyclone V                                        ;
+; Device                                 ; 5CSXFC6D6F31C6                                   ;
+; Power Models                           ; Preliminary                                      ;
+; Total Thermal Power Dissipation        ; 419.95 mW                                        ;
+; Core Dynamic Thermal Power Dissipation ; 0.00 mW                                          ;
+; Core Static Thermal Power Dissipation  ; 410.41 mW                                        ;
+; I/O Thermal Power Dissipation          ; 9.53 mW                                          ;
+; Power Estimation Confidence            ; Low: user provided insufficient toggle rate data ;
++----------------------------------------+--------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; PowerPlay Power Analyzer Settings                                                                    ;
++----------------------------------------------------------------------------+---------+---------------+
+; Option                                                                     ; Setting ; Default Value ;
++----------------------------------------------------------------------------+---------+---------------+
+; Use smart compilation                                                      ; Off     ; Off           ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On      ; On            ;
+; Enable compact report table                                                ; Off     ; Off           ;
+; Default Power Toggle Rate                                                  ; 12.5%   ; 12.5%         ;
+; Default Power Input I/O Toggle Rate                                        ; 12.5%   ; 12.5%         ;
+; Use vectorless estimation                                                  ; On      ; On            ;
+; Use Input Files                                                            ; Off     ; Off           ;
+; Filter Glitches in VCD File Reader                                         ; On      ; On            ;
+; Power Analyzer Report Signal Activity                                      ; Off     ; Off           ;
+; Power Analyzer Report Power Dissipation                                    ; Off     ; Off           ;
+; Device Power Characteristics                                               ; TYPICAL ; TYPICAL       ;
+; Automatically Compute Junction Temperature                                 ; On      ; On            ;
+; Specified Junction Temperature                                             ; 25      ; 25            ;
+; Ambient Temperature                                                        ; 25      ; 25            ;
+; Use Custom Cooling Solution                                                ; Off     ; Off           ;
+; Board Temperature                                                          ; 25      ; 25            ;
+; Enable HPS                                                                 ; Off     ; Off           ;
+; Processor Frequency                                                        ; 0.0     ; 0.0           ;
++----------------------------------------------------------------------------+---------+---------------+
+
+
++------------------------------------------------+
+; Indeterminate Toggle Rates                     ;
++------------------+-----------------------------+
+; Node             ; Reason                      ;
++------------------+-----------------------------+
+; clk_enable       ; No valid clock domain found ;
+; clk              ; No valid clock domain found ;
+; reset            ; No valid clock domain found ;
+; In1[0]           ; No valid clock domain found ;
+; In1[1]           ; No valid clock domain found ;
+; In1[2]           ; No valid clock domain found ;
+; In1[3]           ; No valid clock domain found ;
+; In1[4]           ; No valid clock domain found ;
+; In1[5]           ; No valid clock domain found ;
+; In1[6]           ; No valid clock domain found ;
+; In1[7]           ; No valid clock domain found ;
+; In1[8]           ; No valid clock domain found ;
+; In1[9]           ; No valid clock domain found ;
+; In1[10]          ; No valid clock domain found ;
+; In1[11]          ; No valid clock domain found ;
+; In1[12]          ; No valid clock domain found ;
+; In1[13]          ; No valid clock domain found ;
+; In1[14]          ; No valid clock domain found ;
+; In1[15]          ; No valid clock domain found ;
+; clk~inputCLKENA0 ; No valid clock domain found ;
++------------------+-----------------------------+
+
+
++-------------------------------------------------------------------------+
+; Operating Conditions Used                                               ;
++---------------------------------------------+---------------------------+
+; Setting                                     ; Value                     ;
++---------------------------------------------+---------------------------+
+; Device power characteristics                ; Typical                   ;
+;                                             ;                           ;
+; Voltages                                    ;                           ;
+;     VCC                                     ; 1.10 V                    ;
+;     VCCA_FPLL                               ; 2.50 V                    ;
+;     VCCPGM                                  ; 1.80 V                    ;
+;     VCCBAT                                  ; 1.20 V                    ;
+;     VCCE_GXBL                               ; 0.00 V                    ;
+;     VCCL_GXBL                               ; 0.00 V                    ;
+;     VCCH_GXBL                               ; 0.00 V                    ;
+;     VCCAUX                                  ; 2.50 V                    ;
+;     VCC_HPS                                 ; 1.10 V                    ;
+;     VCCRSTCLK_HPS                           ; 1.80 V                    ;
+;     VCCPLL_HPS                              ; 2.50 V                    ;
+;     2.5 V I/O Standard                      ; 2.5 V                     ;
+;                                             ;                           ;
+; Auto computed junction temperature          ; 26.9 degrees Celsius      ;
+;     Ambient temperature                     ; 25.0 degrees Celsius      ;
+;     Junction-to-Case thermal resistance     ; 2.30 degrees Celsius/Watt ;
+;     Case-to-Heat Sink thermal resistance    ; 0.10 degrees Celsius/Watt ;
+;     Heat Sink-to-Ambient thermal resistance ; 2.10 degrees Celsius/Watt ;
+;                                             ;                           ;
+; Board model used                            ; None                      ;
++---------------------------------------------+---------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Block                                                                                                           ;
++------------+------------+---------------------+-----------------------------+--------------------------------+-------------------------------+
+; Block Name ; Block Type ; Total Thermal Power ; Block Thermal Dynamic Power ; Block Thermal Static Power (1) ; Routing Thermal Dynamic Power ;
++------------+------------+---------------------+-----------------------------+--------------------------------+-------------------------------+
+(1) The "Thermal Power Dissipation by Block" Table has been hidden. To show this table, please select the "Write power dissipation by block to report file" option under "PowerPlay Power Analyzer Settings".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Block Type                                                                                                                                                                           ;
++--------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+; Block Type         ; Total Thermal Power by Block Type ; Block Thermal Dynamic Power ; Block Thermal Static Power (1) ; Routing Thermal Dynamic Power ; Block Average Toggle Rate (millions of transitions / sec) ;
++--------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+; DSP block          ; 0.00 mW                           ; 0.00 mW                     ; --                             ; 0.00 mW                       ;    0.000                                                  ;
+; Combinational cell ; 0.00 mW                           ; 0.00 mW                     ; --                             ; 0.00 mW                       ;    0.000                                                  ;
+; Clock enable block ; 0.00 mW                           ; 0.00 mW                     ; --                             ; 0.00 mW                       ;    0.000                                                  ;
+; Register cell      ; 0.00 mW                           ; 0.00 mW                     ; --                             ; 0.00 mW                       ;    0.000                                                  ;
+; I/O                ; 1.54 mW                           ; 0.00 mW                     ; 1.54 mW                        ; 0.00 mW                       ;    0.000                                                  ;
++--------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+(1) The "Block Thermal Static Power" for all block types except Pins and the Voltage Regulator, if one exists, is part of the "Core Static Thermal Power Dissipation" value found on the PowerPlay Power Analyzer-->Summary report panel. The "Core Static Thermal Power Dissipation" also contains the thermal static power dissipated by the routing.
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Hierarchy                                                                                                                                                                                                                                                                      ;
++------------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+-----------------------------------------------------------------------------------------------------------+
+; Compilation Hierarchy Node                     ; Total Thermal Power by Hierarchy (1) ; Block Thermal Dynamic Power (1) ; Block Thermal Static Power (1)(2) ; Routing Thermal Dynamic Power (1) ; Full Hierarchy Name                                                                                       ;
++------------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+-----------------------------------------------------------------------------------------------------------+
+; |DWT_db2_3level                                ; 1.54 mW (1.54 mW)                    ; 0.00 mW (0.00 mW)               ; 1.54 mW (1.54 mW)                 ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level                                                                                           ;
+;     |hard_block:auto_generated_inst            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|hard_block:auto_generated_inst                                                            ;
+;     |alpha1st_Level_Decomp:u_1st_Level_Decomp  ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|alpha1st_Level_Decomp:u_1st_Level_Decomp                                                  ;
+;         |HiD_Even:u_HiD_Even                   ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|alpha1st_Level_Decomp:u_1st_Level_Decomp|HiD_Even:u_HiD_Even                              ;
+;         |HiD_Odd:u_HiD_Odd                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|alpha1st_Level_Decomp:u_1st_Level_Decomp|HiD_Odd:u_HiD_Odd                                ;
+;         |LoD_Even:u_LoD_Even                   ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|alpha1st_Level_Decomp:u_1st_Level_Decomp|LoD_Even:u_LoD_Even                              ;
+;         |LoD_Odd:u_LoD_Odd                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|alpha1st_Level_Decomp:u_1st_Level_Decomp|LoD_Odd:u_LoD_Odd                                ;
+;     |alpha1st_Level_Recon:u_1st_Level_Recon    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|alpha1st_Level_Recon:u_1st_Level_Recon                                                    ;
+;         |HiR_Even:u_HiR_Even                   ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|alpha1st_Level_Recon:u_1st_Level_Recon|HiR_Even:u_HiR_Even                                ;
+;         |HiR_Odd:u_HiR_Odd                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|alpha1st_Level_Recon:u_1st_Level_Recon|HiR_Odd:u_HiR_Odd                                  ;
+;         |LoR_Even:u_LoR_Even                   ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|alpha1st_Level_Recon:u_1st_Level_Recon|LoR_Even:u_LoR_Even                                ;
+;         |LoR_Odd:u_LoR_Odd                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|alpha1st_Level_Recon:u_1st_Level_Recon|LoR_Odd:u_LoR_Odd                                  ;
+;     |alpha2nd_Level_Decomp:u_2nd_Level_Decomp  ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|alpha2nd_Level_Decomp:u_2nd_Level_Decomp                                                  ;
+;         |HiD_Even_block:u_HiD_Even             ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|alpha2nd_Level_Decomp:u_2nd_Level_Decomp|HiD_Even_block:u_HiD_Even                        ;
+;         |HiD_Odd_block:u_HiD_Odd               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|alpha2nd_Level_Decomp:u_2nd_Level_Decomp|HiD_Odd_block:u_HiD_Odd                          ;
+;         |LoD_Even_block:u_LoD_Even             ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|alpha2nd_Level_Decomp:u_2nd_Level_Decomp|LoD_Even_block:u_LoD_Even                        ;
+;         |LoD_Odd_block:u_LoD_Odd               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|alpha2nd_Level_Decomp:u_2nd_Level_Decomp|LoD_Odd_block:u_LoD_Odd                          ;
+;     |alpha2nd_Level_Recon:u_2nd_Level_Recon    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|alpha2nd_Level_Recon:u_2nd_Level_Recon                                                    ;
+;         |HiR_Even_block:u_HiR_Even             ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|alpha2nd_Level_Recon:u_2nd_Level_Recon|HiR_Even_block:u_HiR_Even                          ;
+;         |HiR_Odd_block:u_HiR_Odd               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|alpha2nd_Level_Recon:u_2nd_Level_Recon|HiR_Odd_block:u_HiR_Odd                            ;
+;         |LoR_Even_block:u_LoR_Even             ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|alpha2nd_Level_Recon:u_2nd_Level_Recon|LoR_Even_block:u_LoR_Even                          ;
+;         |LoR_Odd_block:u_LoR_Odd               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|alpha2nd_Level_Recon:u_2nd_Level_Recon|LoR_Odd_block:u_LoR_Odd                            ;
+;     |alpha3rd_Level_Decomp:u_3rd_Level_Decomp  ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|alpha3rd_Level_Decomp:u_3rd_Level_Decomp                                                  ;
+;         |HiD_Even_block1:u_HiD_Even            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|alpha3rd_Level_Decomp:u_3rd_Level_Decomp|HiD_Even_block1:u_HiD_Even                       ;
+;         |HiD_Odd_block1:u_HiD_Odd              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|alpha3rd_Level_Decomp:u_3rd_Level_Decomp|HiD_Odd_block1:u_HiD_Odd                         ;
+;         |LoD_Even_block1:u_LoD_Even            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|alpha3rd_Level_Decomp:u_3rd_Level_Decomp|LoD_Even_block1:u_LoD_Even                       ;
+;         |LoD_Odd_block1:u_LoD_Odd              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|alpha3rd_Level_Decomp:u_3rd_Level_Decomp|LoD_Odd_block1:u_LoD_Odd                         ;
+;     |alpha3rd_Level_Recon:u_3rd_Level_Recon    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|alpha3rd_Level_Recon:u_3rd_Level_Recon                                                    ;
+;         |HiR_Even_block1:u_HiR_Even            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|alpha3rd_Level_Recon:u_3rd_Level_Recon|HiR_Even_block1:u_HiR_Even                         ;
+;         |HiR_Odd_block1:u_HiR_Odd              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|alpha3rd_Level_Recon:u_3rd_Level_Recon|HiR_Odd_block1:u_HiR_Odd                           ;
+;         |LoR_Even_block1:u_LoR_Even            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|alpha3rd_Level_Recon:u_3rd_Level_Recon|LoR_Even_block1:u_LoR_Even                         ;
+;         |LoR_Odd_block1:u_LoR_Odd              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|alpha3rd_Level_Recon:u_3rd_Level_Recon|LoR_Odd_block1:u_LoR_Odd                           ;
+;     |DWT_db2_3level_tc:u_DWT_db2_3level_tc     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|DWT_db2_3level_tc:u_DWT_db2_3level_tc                                                     ;
+;     |Soft_Thresholding:u_Soft_Thresholding     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|Soft_Thresholding:u_Soft_Thresholding                                                     ;
+;     |Soft_Thresholding1:u_Soft_Thresholding1   ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|Soft_Thresholding1:u_Soft_Thresholding1                                                   ;
+;     |Soft_Thresholding2:u_Soft_Thresholding2   ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|Soft_Thresholding2:u_Soft_Thresholding2                                                   ;
+;     |Threshold_Estimator:u_Threshold_Estimator ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|Threshold_Estimator:u_Threshold_Estimator                                                 ;
+;         |Absolute_Value1:u_Absolute_Value1     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|Threshold_Estimator:u_Threshold_Estimator|Absolute_Value1:u_Absolute_Value1               ;
+;         |Median2:u_Median2                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|Threshold_Estimator:u_Threshold_Estimator|Median2:u_Median2                               ;
+;             |Data_Sorter2:u_Data_Sorter2       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|Threshold_Estimator:u_Threshold_Estimator|Median2:u_Median2|Data_Sorter2:u_Data_Sorter2   ;
+;             |Data_Sorter3:u_Data_Sorter3       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|Threshold_Estimator:u_Threshold_Estimator|Median2:u_Median2|Data_Sorter3:u_Data_Sorter3   ;
+;             |Data_Sorter6:u_Data_Sorter6       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|Threshold_Estimator:u_Threshold_Estimator|Median2:u_Median2|Data_Sorter6:u_Data_Sorter6   ;
+;             |Data_Sorter10:u_Data_Sorter10     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|Threshold_Estimator:u_Threshold_Estimator|Median2:u_Median2|Data_Sorter10:u_Data_Sorter10 ;
+;             |Data_Sorter13:u_Data_Sorter13     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|Threshold_Estimator:u_Threshold_Estimator|Median2:u_Median2|Data_Sorter13:u_Data_Sorter13 ;
+;             |Data_Sorter17:u_Data_Sorter17     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|Threshold_Estimator:u_Threshold_Estimator|Median2:u_Median2|Data_Sorter17:u_Data_Sorter17 ;
+;             |Data_Sorter20:u_Data_Sorter20     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|Threshold_Estimator:u_Threshold_Estimator|Median2:u_Median2|Data_Sorter20:u_Data_Sorter20 ;
+;             |Data_Sorter23:u_Data_Sorter23     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|Threshold_Estimator:u_Threshold_Estimator|Median2:u_Median2|Data_Sorter23:u_Data_Sorter23 ;
+;             |Data_Sorter24:u_Data_Sorter24     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |DWT_db2_3level|Threshold_Estimator:u_Threshold_Estimator|Median2:u_Median2|Data_Sorter24:u_Data_Sorter24 ;
++------------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+-----------------------------------------------------------------------------------------------------------+
+(1) Value in parentheses is the power consumed at that level of hierarchy. Value not in parentheses is the power consumed at that level of hierarchy plus the power consumed by all levels of hierarchy below it.
+
+(2) The "Block Thermal Static Power" for all levels of hierarchy except the top-level hierarchy is part of the "Core Static Thermal Power Dissipation" value found on the PowerPlay Power Analyzer-->Summary report panel. The "Core Static Thermal Power Dissipation" also contains the thermal static power dissipated by the routing.
+
+
++--------------------------------------------------------------------+
+; Core Dynamic Thermal Power Dissipation by Clock Domain             ;
++-----------------+-----------------------+--------------------------+
+; Clock Domain    ; Clock Frequency (MHz) ; Total Core Dynamic Power ;
++-----------------+-----------------------+--------------------------+
+; No clock domain ; 0.00                  ; 0.00                     ;
++-----------------+-----------------------+--------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Current Drawn from Voltage Supplies Summary                                                                                        ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; Voltage Supply ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; VCC            ; 49.81 mA                ; 0.00 mA                   ; 49.81 mA                 ; 49.81 mA                         ;
+; VCCIO          ; 0.89 mA                 ; 0.00 mA                   ; 0.89 mA                  ; 0.89 mA                          ;
+; VCCPD          ; 2.38 mA                 ; 0.00 mA                   ; 2.38 mA                  ; 2.38 mA                          ;
+; VCCA_FPLL      ; 2.46 mA                 ; 0.00 mA                   ; 2.46 mA                  ; 2.46 mA                          ;
+; VCCPGM         ; 0.33 mA                 ; 0.00 mA                   ; 0.33 mA                  ; 0.33 mA                          ;
+; VCCBAT         ; 0.00 mA                 ; 0.00 mA                   ; 0.00 mA                  ; 0.00 mA                          ;
+; VCCE_GXBL      ; 0.00 mA                 ; 0.00 mA                   ; 0.00 mA                  ; 0.00 mA                          ;
+; VCCL_GXBL      ; 0.00 mA                 ; 0.00 mA                   ; 0.00 mA                  ; 0.00 mA                          ;
+; VCCH_GXBL      ; 0.00 mA                 ; 0.00 mA                   ; 0.00 mA                  ; 0.00 mA                          ;
+; VCCAUX         ; 140.08 mA               ; 0.00 mA                   ; 140.08 mA                ; 140.08 mA                        ;
+; VCC_HPS        ; 0.00 mA                 ; 0.00 mA                   ; 0.00 mA                  ; 0.00 mA                          ;
+; VCCIO_HPS      ; 0.00 mA                 ; 0.00 mA                   ; 0.00 mA                  ; 0.00 mA                          ;
+; VCCPD_HPS      ; 0.00 mA                 ; 0.00 mA                   ; 0.00 mA                  ; 0.00 mA                          ;
+; VCCRSTCLK_HPS  ; 0.00 mA                 ; 0.00 mA                   ; 0.00 mA                  ; 0.00 mA                          ;
+; VCCPLL_HPS     ; 0.00 mA                 ; 0.00 mA                   ; 0.00 mA                  ; 0.00 mA                          ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+(1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
+(2) Currents reported in column "Minimum Power Supply Current" do not include transient power-up currents. For transient power-up currents, see the device family datasheet, errata sheet, and/or ES guidelines document, as appropriate. 
+
+
++-----------------------------------------------------------------------------------------------+
+; VCCIO Supply Current Drawn by I/O Bank                                                        ;
++----------+---------------+---------------------+-----------------------+----------------------+
+; I/O Bank ; VCCIO Voltage ; Total Current Drawn ; Dynamic Current Drawn ; Static Current Drawn ;
++----------+---------------+---------------------+-----------------------+----------------------+
+; B2L      ; --            ; --                  ; --                    ; --                   ;
+; B1L      ; --            ; --                  ; --                    ; --                   ;
+; B0L      ; --            ; --                  ; --                    ; --                   ;
+; 3A       ; 2.5V          ; 0.07 mA             ; 0.00 mA               ; 0.07 mA              ;
+; 3B       ; 2.5V          ; 0.10 mA             ; 0.00 mA               ; 0.10 mA              ;
+; 4A       ; 2.5V          ; 0.07 mA             ; 0.00 mA               ; 0.07 mA              ;
+; 5A       ; 2.5V          ; 0.07 mA             ; 0.00 mA               ; 0.07 mA              ;
+; 5B       ; 2.5V          ; 0.08 mA             ; 0.00 mA               ; 0.08 mA              ;
+; 6B       ; 2.5V          ; 0.07 mA             ; 0.00 mA               ; 0.07 mA              ;
+; 6A       ; 2.5V          ; 0.07 mA             ; 0.00 mA               ; 0.07 mA              ;
+; 7A       ; 2.5V          ; 0.07 mA             ; 0.00 mA               ; 0.07 mA              ;
+; 7B       ; 2.5V          ; 0.07 mA             ; 0.00 mA               ; 0.07 mA              ;
+; 7C       ; 2.5V          ; 0.07 mA             ; 0.00 mA               ; 0.07 mA              ;
+; 7D       ; 2.5V          ; 0.07 mA             ; 0.00 mA               ; 0.07 mA              ;
+; 8A       ; 2.5V          ; 0.07 mA             ; 0.00 mA               ; 0.07 mA              ;
+; 9A       ; --            ; --                  ; --                    ; --                   ;
++----------+---------------+---------------------+-----------------------+----------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; VCCIO Supply Current Drawn by Voltage                                                                                             ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; VCCIO Voltage ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; 2.5V          ; 0.89 mA                 ; 0.00 mA                   ; 0.89 mA                  ; 0.89 mA                          ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+(1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
+(2) Currents reported in column "Minimum Power Supply Current" do not include transient power-up currents. For transient power-up currents, see the device family datasheet, errata sheet, and/or ES guidelines document, as appropriate. 
+
+
++-----------------------------------------------------------------------------------------------+
+; VCCPD Supply Current Drawn by I/O Bank                                                        ;
++----------+---------------+---------------------+-----------------------+----------------------+
+; I/O Bank ; VCCPD Voltage ; Total Current Drawn ; Dynamic Current Drawn ; Static Current Drawn ;
++----------+---------------+---------------------+-----------------------+----------------------+
+; B2L      ; --            ; --                  ; --                    ; --                   ;
+; B1L      ; --            ; --                  ; --                    ; --                   ;
+; B0L      ; --            ; --                  ; --                    ; --                   ;
+; 3A       ; 2.5V          ; 0.20 mA             ; 0.00 mA               ; 0.20 mA              ;
+; 3B       ; 2.5V          ; 0.22 mA             ; 0.00 mA               ; 0.22 mA              ;
+; 4A       ; 2.5V          ; 0.20 mA             ; 0.00 mA               ; 0.20 mA              ;
+; 5A       ; 2.5V          ; 0.20 mA             ; 0.00 mA               ; 0.20 mA              ;
+; 5B       ; 2.5V          ; 0.20 mA             ; 0.00 mA               ; 0.20 mA              ;
+; 6B       ; 2.5V          ; 0.20 mA             ; 0.00 mA               ; 0.20 mA              ;
+; 6A       ; 2.5V          ; 0.20 mA             ; 0.00 mA               ; 0.20 mA              ;
+; 7A       ; 2.5V          ; 0.20 mA             ; 0.00 mA               ; 0.20 mA              ;
+; 7B       ; 2.5V          ; 0.20 mA             ; 0.00 mA               ; 0.20 mA              ;
+; 7C       ; 2.5V          ; 0.20 mA             ; 0.00 mA               ; 0.20 mA              ;
+; 7D       ; 2.5V          ; 0.20 mA             ; 0.00 mA               ; 0.20 mA              ;
+; 8A       ; 2.5V          ; 0.20 mA             ; 0.00 mA               ; 0.20 mA              ;
+; 9A       ; --            ; --                  ; --                    ; --                   ;
++----------+---------------+---------------------+-----------------------+----------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; VCCPD Supply Current Drawn by Voltage                                                                                             ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; VCCPD Voltage ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; 2.5V          ; 2.38 mA                 ; 0.00 mA                   ; 2.38 mA                  ; 2.38 mA                          ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+(1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
+(2) Currents reported in column "Minimum Power Supply Current" do not include transient power-up currents. For transient power-up currents, see the device family datasheet, errata sheet, and/or ES guidelines document, as appropriate. 
+
+
++---------------------------------------------------------------------------------------------------+
+; VCCIO_HPS Supply Current Drawn by I/O Bank                                                        ;
++----------+-------------------+---------------------+-----------------------+----------------------+
+; I/O Bank ; VCCIO_HPS Voltage ; Total Current Drawn ; Dynamic Current Drawn ; Static Current Drawn ;
++----------+-------------------+---------------------+-----------------------+----------------------+
+; B2L      ; --                ; --                  ; --                    ; --                   ;
+; B1L      ; --                ; --                  ; --                    ; --                   ;
+; B0L      ; --                ; --                  ; --                    ; --                   ;
+; 3A       ; --                ; --                  ; --                    ; --                   ;
+; 3B       ; --                ; --                  ; --                    ; --                   ;
+; 4A       ; --                ; --                  ; --                    ; --                   ;
+; 5A       ; --                ; --                  ; --                    ; --                   ;
+; 5B       ; --                ; --                  ; --                    ; --                   ;
+; 6B       ; --                ; --                  ; --                    ; --                   ;
+; 6A       ; --                ; --                  ; --                    ; --                   ;
+; 7A       ; --                ; --                  ; --                    ; --                   ;
+; 7B       ; --                ; --                  ; --                    ; --                   ;
+; 7C       ; --                ; --                  ; --                    ; --                   ;
+; 7D       ; --                ; --                  ; --                    ; --                   ;
+; 8A       ; --                ; --                  ; --                    ; --                   ;
+; 9A       ; --                ; --                  ; --                    ; --                   ;
++----------+-------------------+---------------------+-----------------------+----------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; VCCIO_HPS Supply Current Drawn by Voltage                                                                                             ;
++-------------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; VCCIO_HPS Voltage ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
++-------------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+(1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
+(2) Currents reported in column "Minimum Power Supply Current" do not include transient power-up currents. For transient power-up currents, see the device family datasheet, errata sheet, and/or ES guidelines document, as appropriate. 
+
+
++---------------------------------------------------------------------------------------------------+
+; VCCPD_HPS Supply Current Drawn by I/O Bank                                                        ;
++----------+-------------------+---------------------+-----------------------+----------------------+
+; I/O Bank ; VCCPD_HPS Voltage ; Total Current Drawn ; Dynamic Current Drawn ; Static Current Drawn ;
++----------+-------------------+---------------------+-----------------------+----------------------+
+; B2L      ; --                ; --                  ; --                    ; --                   ;
+; B1L      ; --                ; --                  ; --                    ; --                   ;
+; B0L      ; --                ; --                  ; --                    ; --                   ;
+; 3A       ; --                ; --                  ; --                    ; --                   ;
+; 3B       ; --                ; --                  ; --                    ; --                   ;
+; 4A       ; --                ; --                  ; --                    ; --                   ;
+; 5A       ; --                ; --                  ; --                    ; --                   ;
+; 5B       ; --                ; --                  ; --                    ; --                   ;
+; 6B       ; --                ; --                  ; --                    ; --                   ;
+; 6A       ; --                ; --                  ; --                    ; --                   ;
+; 7A       ; --                ; --                  ; --                    ; --                   ;
+; 7B       ; --                ; --                  ; --                    ; --                   ;
+; 7C       ; --                ; --                  ; --                    ; --                   ;
+; 7D       ; --                ; --                  ; --                    ; --                   ;
+; 8A       ; --                ; --                  ; --                    ; --                   ;
+; 9A       ; --                ; --                  ; --                    ; --                   ;
++----------+-------------------+---------------------+-----------------------+----------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; VCCPD_HPS Supply Current Drawn by Voltage                                                                                             ;
++-------------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; VCCPD_HPS Voltage ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
++-------------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+(1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
+(2) Currents reported in column "Minimum Power Supply Current" do not include transient power-up currents. For transient power-up currents, see the device family datasheet, errata sheet, and/or ES guidelines document, as appropriate. 
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Confidence Metric Details                                                                                                                           ;
++----------------------------------------------------------------------------------------+---------------+------------+---------------+---------------+
+; Data Source                                                                            ; Total         ; Pin        ; Registered    ; Combinational ;
++----------------------------------------------------------------------------------------+---------------+------------+---------------+---------------+
+; Simulation (from file)                                                                 ;               ;            ;               ;               ;
+;     -- Number of signals with Toggle Rate from Simulation                              ; 0 (0.0%)      ; 0 (0.0%)   ; 0 (0.0%)      ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Simulation                       ; 0 (0.0%)      ; 0 (0.0%)   ; 0 (0.0%)      ; 0 (0.0%)      ;
+;                                                                                        ;               ;            ;               ;               ;
+; Node, entity or clock assignment                                                       ;               ;            ;               ;               ;
+;     -- Number of signals with Toggle Rate from Node, entity or clock assignment        ; 0 (0.0%)      ; 0 (0.0%)   ; 0 (0.0%)      ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Node, entity or clock assignment ; 0 (0.0%)      ; 0 (0.0%)   ; 0 (0.0%)      ; 0 (0.0%)      ;
+;                                                                                        ;               ;            ;               ;               ;
+; Vectorless estimation                                                                  ;               ;            ;               ;               ;
+;     -- Number of signals with Toggle Rate from Vectorless estimation                   ; 13072 (99.9%) ; 17 (47.2%) ; 8240 (100.0%) ; 4815 (100.0%) ;
+;     -- Number of signals with Zero toggle rate, from Vectorless estimation             ; 75 (0.6%)     ; 1 (2.8%)   ; 16 (0.2%)     ; 58 (1.2%)     ;
+;     -- Number of signals with Static Probability from Vectorless estimation            ; 13072 (99.9%) ; 17 (47.2%) ; 8240 (100.0%) ; 4815 (100.0%) ;
+;                                                                                        ;               ;            ;               ;               ;
+; Default assignment                                                                     ;               ;            ;               ;               ;
+;     -- Number of signals with Toggle Rate from Default assignment                      ; 0 (0.0%)      ; 0 (0.0%)   ; 0 (0.0%)      ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Default assignment               ; 19 (0.1%)     ; 19 (52.8%) ; 0 (0.0%)      ; 0 (0.0%)      ;
+;                                                                                        ;               ;            ;               ;               ;
+; Assumed 0                                                                              ;               ;            ;               ;               ;
+;     -- Number of signals with Toggle Rate assumed 0                                    ; 19 (0.1%)     ; 19 (52.8%) ; 0 (0.0%)      ; 0 (0.0%)      ;
++----------------------------------------------------------------------------------------+---------------+------------+---------------+---------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Activities                                                                                                                           ;
++--------+------+---------------------------------------------+-------------------------+--------------------+--------------------------------+
+; Signal ; Type ; Toggle Rate (millions of transitions / sec) ; Toggle Rate Data Source ; Static Probability ; Static Probability Data Source ;
++--------+------+---------------------------------------------+-------------------------+--------------------+--------------------------------+
+(1) The "Signal Activity" Table has been hidden. To show this table, please select the "Write signal activities to report file" option under "PowerPlay Power Analyzer Settings".
+
+
++-----------------------------------+
+; PowerPlay Power Analyzer Messages ;
++-----------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit PowerPlay Power Analyzer
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Wed Apr 17 20:25:26 2024
+Info: Command: quartus_pow --read_settings_files=on --write_settings_files=off DWT_db2_3level -c DWT_db2_3level
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'DWT_db2_3level.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Warning (332060): Node: clk was determined to be a clock but was found without an associated clock assignment.
+Warning (332068): No clocks defined in design.
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (223000): Starting Vectorless Power Activity Estimation
+Warning (222013): Relative toggle rates could not be calculated because no clock domain could be identified for some nodes
+Info (223001): Completed Vectorless Power Activity Estimation
+Critical Warning (215050): HPS power is being analyzed for a device with an HPS without HPS power.
+Info (218000): Using Advanced I/O Power to simulate I/O buffers with the specified board trace model
+Warning (215044): No board thermal model was selected.  Analyzing without board thermal modeling.
+Info (334003): Started post-fitting delay annotation
+Warning (334000): Timing characteristics of device 5CSXFC6D6F31C6 are preliminary
+Info (334004): Delay annotation completed successfully
+Warning (344000): Input register "AX" of "alpha3rd_Level_Recon:u_3rd_Level_Recon|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha3rd_Level_Recon:u_3rd_Level_Recon|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha3rd_Level_Recon:u_3rd_Level_Recon|LoR_Even_block1:u_LoR_Even|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha3rd_Level_Recon:u_3rd_Level_Recon|LoR_Even_block1:u_LoR_Even|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha3rd_Level_Recon:u_3rd_Level_Recon|LoR_Even_block1:u_LoR_Even|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha3rd_Level_Recon:u_3rd_Level_Recon|LoR_Even_block1:u_LoR_Even|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha2nd_Level_Recon:u_2nd_Level_Recon|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha2nd_Level_Recon:u_2nd_Level_Recon|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha3rd_Level_Recon:u_3rd_Level_Recon|LoR_Odd_block1:u_LoR_Odd|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha3rd_Level_Recon:u_3rd_Level_Recon|LoR_Odd_block1:u_LoR_Odd|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha3rd_Level_Recon:u_3rd_Level_Recon|LoR_Odd_block1:u_LoR_Odd|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha3rd_Level_Recon:u_3rd_Level_Recon|LoR_Odd_block1:u_LoR_Odd|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha2nd_Level_Recon:u_2nd_Level_Recon|LoR_Even_block:u_LoR_Even|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha2nd_Level_Recon:u_2nd_Level_Recon|LoR_Even_block:u_LoR_Even|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha2nd_Level_Recon:u_2nd_Level_Recon|LoR_Even_block:u_LoR_Even|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha2nd_Level_Recon:u_2nd_Level_Recon|LoR_Even_block:u_LoR_Even|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha1st_Level_Recon:u_1st_Level_Recon|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha1st_Level_Recon:u_1st_Level_Recon|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha2nd_Level_Recon:u_2nd_Level_Recon|LoR_Odd_block:u_LoR_Odd|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha2nd_Level_Recon:u_2nd_Level_Recon|LoR_Odd_block:u_LoR_Odd|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha2nd_Level_Recon:u_2nd_Level_Recon|LoR_Odd_block:u_LoR_Odd|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha2nd_Level_Recon:u_2nd_Level_Recon|LoR_Odd_block:u_LoR_Odd|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha1st_Level_Recon:u_1st_Level_Recon|HiR_Even:u_HiR_Even|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha1st_Level_Recon:u_1st_Level_Recon|HiR_Even:u_HiR_Even|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha1st_Level_Recon:u_1st_Level_Recon|HiR_Even:u_HiR_Even|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha1st_Level_Recon:u_1st_Level_Recon|HiR_Even:u_HiR_Even|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha1st_Level_Recon:u_1st_Level_Recon|LoR_Even:u_LoR_Even|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha1st_Level_Recon:u_1st_Level_Recon|LoR_Even:u_LoR_Even|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha1st_Level_Recon:u_1st_Level_Recon|HiR_Odd:u_HiR_Odd|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha1st_Level_Recon:u_1st_Level_Recon|HiR_Odd:u_HiR_Odd|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha1st_Level_Recon:u_1st_Level_Recon|LoR_Odd:u_LoR_Odd|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha1st_Level_Recon:u_1st_Level_Recon|LoR_Odd:u_LoR_Odd|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha1st_Level_Recon:u_1st_Level_Recon|LoR_Even:u_LoR_Even|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha1st_Level_Recon:u_1st_Level_Recon|LoR_Even:u_LoR_Even|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha1st_Level_Recon:u_1st_Level_Recon|HiR_Odd:u_HiR_Odd|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha1st_Level_Recon:u_1st_Level_Recon|HiR_Odd:u_HiR_Odd|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "Soft_Thresholding2:u_Soft_Thresholding2|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha1st_Level_Recon:u_1st_Level_Recon|LoR_Odd:u_LoR_Odd|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha1st_Level_Recon:u_1st_Level_Recon|LoR_Odd:u_LoR_Odd|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha3rd_Level_Decomp:u_3rd_Level_Decomp|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha3rd_Level_Decomp:u_3rd_Level_Decomp|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha3rd_Level_Decomp:u_3rd_Level_Decomp|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha3rd_Level_Decomp:u_3rd_Level_Decomp|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha3rd_Level_Decomp:u_3rd_Level_Decomp|LoD_Odd_block1:u_LoD_Odd|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha3rd_Level_Decomp:u_3rd_Level_Decomp|LoD_Odd_block1:u_LoD_Odd|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha3rd_Level_Decomp:u_3rd_Level_Decomp|HiD_Odd_block1:u_HiD_Odd|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha3rd_Level_Decomp:u_3rd_Level_Decomp|HiD_Odd_block1:u_HiD_Odd|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha3rd_Level_Decomp:u_3rd_Level_Decomp|LoD_Even_block1:u_LoD_Even|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha3rd_Level_Decomp:u_3rd_Level_Decomp|LoD_Even_block1:u_LoD_Even|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha3rd_Level_Decomp:u_3rd_Level_Decomp|LoD_Odd_block1:u_LoD_Odd|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha3rd_Level_Decomp:u_3rd_Level_Decomp|LoD_Odd_block1:u_LoD_Odd|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha3rd_Level_Decomp:u_3rd_Level_Decomp|LoD_Even_block1:u_LoD_Even|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha3rd_Level_Decomp:u_3rd_Level_Decomp|LoD_Even_block1:u_LoD_Even|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha3rd_Level_Decomp:u_3rd_Level_Decomp|HiD_Even_block1:u_HiD_Even|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha3rd_Level_Decomp:u_3rd_Level_Decomp|HiD_Even_block1:u_HiD_Even|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha3rd_Level_Decomp:u_3rd_Level_Decomp|HiD_Even_block1:u_HiD_Even|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha3rd_Level_Decomp:u_3rd_Level_Decomp|HiD_Even_block1:u_HiD_Even|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha3rd_Level_Decomp:u_3rd_Level_Decomp|HiD_Odd_block1:u_HiD_Odd|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha3rd_Level_Decomp:u_3rd_Level_Decomp|HiD_Odd_block1:u_HiD_Odd|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha2nd_Level_Decomp:u_2nd_Level_Decomp|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha2nd_Level_Decomp:u_2nd_Level_Decomp|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha2nd_Level_Decomp:u_2nd_Level_Decomp|LoD_Odd_block:u_LoD_Odd|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha2nd_Level_Decomp:u_2nd_Level_Decomp|LoD_Odd_block:u_LoD_Odd|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha2nd_Level_Decomp:u_2nd_Level_Decomp|LoD_Even_block:u_LoD_Even|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha2nd_Level_Decomp:u_2nd_Level_Decomp|LoD_Even_block:u_LoD_Even|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha2nd_Level_Decomp:u_2nd_Level_Decomp|LoD_Odd_block:u_LoD_Odd|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha2nd_Level_Decomp:u_2nd_Level_Decomp|LoD_Odd_block:u_LoD_Odd|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha2nd_Level_Decomp:u_2nd_Level_Decomp|LoD_Even_block:u_LoD_Even|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha2nd_Level_Decomp:u_2nd_Level_Decomp|LoD_Even_block:u_LoD_Even|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha1st_Level_Decomp:u_1st_Level_Decomp|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha1st_Level_Decomp:u_1st_Level_Decomp|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha1st_Level_Decomp:u_1st_Level_Decomp|LoD_Odd:u_LoD_Odd|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha1st_Level_Decomp:u_1st_Level_Decomp|LoD_Odd:u_LoD_Odd|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha1st_Level_Decomp:u_1st_Level_Decomp|LoD_Even:u_LoD_Even|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha1st_Level_Decomp:u_1st_Level_Decomp|LoD_Even:u_LoD_Even|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha1st_Level_Decomp:u_1st_Level_Decomp|LoD_Even:u_LoD_Even|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha1st_Level_Decomp:u_1st_Level_Decomp|LoD_Even:u_LoD_Even|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha1st_Level_Decomp:u_1st_Level_Decomp|LoD_Odd:u_LoD_Odd|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha1st_Level_Decomp:u_1st_Level_Decomp|LoD_Odd:u_LoD_Odd|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha3rd_Level_Recon:u_3rd_Level_Recon|HiR_Even_block1:u_HiR_Even|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha3rd_Level_Recon:u_3rd_Level_Recon|HiR_Even_block1:u_HiR_Even|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha3rd_Level_Recon:u_3rd_Level_Recon|HiR_Even_block1:u_HiR_Even|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha3rd_Level_Recon:u_3rd_Level_Recon|HiR_Even_block1:u_HiR_Even|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha3rd_Level_Recon:u_3rd_Level_Recon|HiR_Odd_block1:u_HiR_Odd|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha3rd_Level_Recon:u_3rd_Level_Recon|HiR_Odd_block1:u_HiR_Odd|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha3rd_Level_Recon:u_3rd_Level_Recon|HiR_Odd_block1:u_HiR_Odd|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha3rd_Level_Recon:u_3rd_Level_Recon|HiR_Odd_block1:u_HiR_Odd|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "Soft_Thresholding:u_Soft_Thresholding|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha2nd_Level_Recon:u_2nd_Level_Recon|HiR_Even_block:u_HiR_Even|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha2nd_Level_Recon:u_2nd_Level_Recon|HiR_Even_block:u_HiR_Even|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha2nd_Level_Recon:u_2nd_Level_Recon|HiR_Even_block:u_HiR_Even|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha2nd_Level_Recon:u_2nd_Level_Recon|HiR_Even_block:u_HiR_Even|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha2nd_Level_Recon:u_2nd_Level_Recon|HiR_Odd_block:u_HiR_Odd|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha2nd_Level_Recon:u_2nd_Level_Recon|HiR_Odd_block:u_HiR_Odd|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha2nd_Level_Recon:u_2nd_Level_Recon|HiR_Odd_block:u_HiR_Odd|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha2nd_Level_Recon:u_2nd_Level_Recon|HiR_Odd_block:u_HiR_Odd|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "Soft_Thresholding1:u_Soft_Thresholding1|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "Soft_Thresholding:u_Soft_Thresholding|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "Soft_Thresholding:u_Soft_Thresholding|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "Threshold_Estimator:u_Threshold_Estimator|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "Threshold_Estimator:u_Threshold_Estimator|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "Soft_Thresholding1:u_Soft_Thresholding1|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "Soft_Thresholding1:u_Soft_Thresholding1|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "Soft_Thresholding2:u_Soft_Thresholding2|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "Soft_Thresholding2:u_Soft_Thresholding2|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha2nd_Level_Decomp:u_2nd_Level_Decomp|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha2nd_Level_Decomp:u_2nd_Level_Decomp|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha2nd_Level_Decomp:u_2nd_Level_Decomp|HiD_Odd_block:u_HiD_Odd|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha2nd_Level_Decomp:u_2nd_Level_Decomp|HiD_Odd_block:u_HiD_Odd|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha2nd_Level_Decomp:u_2nd_Level_Decomp|HiD_Even_block:u_HiD_Even|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha2nd_Level_Decomp:u_2nd_Level_Decomp|HiD_Even_block:u_HiD_Even|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha2nd_Level_Decomp:u_2nd_Level_Decomp|HiD_Even_block:u_HiD_Even|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha2nd_Level_Decomp:u_2nd_Level_Decomp|HiD_Even_block:u_HiD_Even|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha2nd_Level_Decomp:u_2nd_Level_Decomp|HiD_Odd_block:u_HiD_Odd|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha2nd_Level_Decomp:u_2nd_Level_Decomp|HiD_Odd_block:u_HiD_Odd|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "Threshold_Estimator:u_Threshold_Estimator|Absolute_Value1:u_Absolute_Value1|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "Threshold_Estimator:u_Threshold_Estimator|Absolute_Value1:u_Absolute_Value1|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha1st_Level_Decomp:u_1st_Level_Decomp|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha1st_Level_Decomp:u_1st_Level_Decomp|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha1st_Level_Decomp:u_1st_Level_Decomp|HiD_Odd:u_HiD_Odd|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha1st_Level_Decomp:u_1st_Level_Decomp|HiD_Odd:u_HiD_Odd|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha1st_Level_Decomp:u_1st_Level_Decomp|HiD_Even:u_HiD_Even|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha1st_Level_Decomp:u_1st_Level_Decomp|HiD_Even:u_HiD_Even|Mult0~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha1st_Level_Decomp:u_1st_Level_Decomp|HiD_Even:u_HiD_Even|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha1st_Level_Decomp:u_1st_Level_Decomp|HiD_Even:u_HiD_Even|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AX" of "alpha1st_Level_Decomp:u_1st_Level_Decomp|HiD_Odd:u_HiD_Odd|Mult1~8" uses a zero-frequency clock.
+Warning (344000): Input register "AY" of "alpha1st_Level_Decomp:u_1st_Level_Decomp|HiD_Odd:u_HiD_Odd|Mult1~8" uses a zero-frequency clock.
+Info (215049): Average toggle rate for this design is 0.000 millions of transitions / sec
+Info (215031): Total thermal power estimate for the design is 419.95 mW
+Info: Quartus II 64-Bit PowerPlay Power Analyzer was successful. 0 errors, 134 warnings
+    Info: Peak virtual memory: 5052 megabytes
+    Info: Processing ended: Wed Apr 17 20:25:56 2024
+    Info: Elapsed time: 00:00:30
+    Info: Total CPU time (on all processors): 00:00:28
+
+

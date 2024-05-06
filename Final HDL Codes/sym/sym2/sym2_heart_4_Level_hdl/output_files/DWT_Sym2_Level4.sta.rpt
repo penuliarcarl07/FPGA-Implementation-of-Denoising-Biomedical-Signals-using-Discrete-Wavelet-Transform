@@ -1,0 +1,1275 @@
+TimeQuest Timing Analyzer report for DWT_Sym2_Level4
+Mon Apr 22 12:44:08 2024
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1100mV 85C Model Fmax Summary
+  6. Timing Closure Recommendations
+  7. Slow 1100mV 85C Model Setup Summary
+  8. Slow 1100mV 85C Model Hold Summary
+  9. Slow 1100mV 85C Model Recovery Summary
+ 10. Slow 1100mV 85C Model Removal Summary
+ 11. Slow 1100mV 85C Model Minimum Pulse Width Summary
+ 12. Setup Times
+ 13. Hold Times
+ 14. Clock to Output Times
+ 15. Minimum Clock to Output Times
+ 16. Propagation Delay
+ 17. Minimum Propagation Delay
+ 18. Slow 1100mV 85C Model Metastability Report
+ 19. Slow 1100mV 0C Model Fmax Summary
+ 20. Slow 1100mV 0C Model Setup Summary
+ 21. Slow 1100mV 0C Model Hold Summary
+ 22. Slow 1100mV 0C Model Recovery Summary
+ 23. Slow 1100mV 0C Model Removal Summary
+ 24. Slow 1100mV 0C Model Minimum Pulse Width Summary
+ 25. Setup Times
+ 26. Hold Times
+ 27. Clock to Output Times
+ 28. Minimum Clock to Output Times
+ 29. Propagation Delay
+ 30. Minimum Propagation Delay
+ 31. Slow 1100mV 0C Model Metastability Report
+ 32. Fast 1100mV 85C Model Setup Summary
+ 33. Fast 1100mV 85C Model Hold Summary
+ 34. Fast 1100mV 85C Model Recovery Summary
+ 35. Fast 1100mV 85C Model Removal Summary
+ 36. Fast 1100mV 85C Model Minimum Pulse Width Summary
+ 37. Setup Times
+ 38. Hold Times
+ 39. Clock to Output Times
+ 40. Minimum Clock to Output Times
+ 41. Propagation Delay
+ 42. Minimum Propagation Delay
+ 43. Fast 1100mV 85C Model Metastability Report
+ 44. Fast 1100mV 0C Model Setup Summary
+ 45. Fast 1100mV 0C Model Hold Summary
+ 46. Fast 1100mV 0C Model Recovery Summary
+ 47. Fast 1100mV 0C Model Removal Summary
+ 48. Fast 1100mV 0C Model Minimum Pulse Width Summary
+ 49. Setup Times
+ 50. Hold Times
+ 51. Clock to Output Times
+ 52. Minimum Clock to Output Times
+ 53. Propagation Delay
+ 54. Minimum Propagation Delay
+ 55. Fast 1100mV 0C Model Metastability Report
+ 56. Multicorner Timing Analysis Summary
+ 57. Setup Times
+ 58. Hold Times
+ 59. Clock to Output Times
+ 60. Minimum Clock to Output Times
+ 61. Propagation Delay
+ 62. Minimum Propagation Delay
+ 63. Board Trace Model Assignments
+ 64. Input Transition Times
+ 65. Signal Integrity Metrics (Slow 1100mv 0c Model)
+ 66. Signal Integrity Metrics (Slow 1100mv 85c Model)
+ 67. Signal Integrity Metrics (Fast 1100mv 0c Model)
+ 68. Signal Integrity Metrics (Fast 1100mv 85c Model)
+ 69. Setup Transfers
+ 70. Hold Transfers
+ 71. Report TCCS
+ 72. Report RSKM
+ 73. Unconstrained Paths
+ 74. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                       ;
++--------------------+----------------------------------------------------+
+; Quartus II Version ; Version 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name      ; DWT_Sym2_Level4                                    ;
+; Device Family      ; Cyclone V                                          ;
+; Device Name        ; 5CSXFC6D6F31C6                                     ;
+; Timing Models      ; Preliminary                                        ;
+; Delay Model        ; Combined                                           ;
+; Rise/Fall Delays   ; Enabled                                            ;
++--------------------+----------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
+;                            ;             ;
+; Average used               ; 3.40        ;
+; Maximum used               ; 12          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;  26.7%      ;
+;     Processors 5-12        ;  20.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                          ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; clk        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+
+
++--------------------------------------------------+
+; Slow 1100mV 85C Model Fmax Summary               ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 154.63 MHz ; 154.63 MHz      ; clk        ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
+----------------------------------
+; Timing Closure Recommendations ;
+----------------------------------
+HTML report is unavailable in plain text report export.
+
+
++-------------------------------------+
+; Slow 1100mV 85C Model Setup Summary ;
++-------+--------+--------------------+
+; Clock ; Slack  ; End Point TNS      ;
++-------+--------+--------------------+
+; clk   ; -5.467 ; -10742.838         ;
++-------+--------+--------------------+
+
+
++------------------------------------+
+; Slow 1100mV 85C Model Hold Summary ;
++-------+-------+--------------------+
+; Clock ; Slack ; End Point TNS      ;
++-------+-------+--------------------+
+; clk   ; 0.233 ; 0.000              ;
++-------+-------+--------------------+
+
+
+------------------------------------------
+; Slow 1100mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1100mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
++---------------------------------------------------+
+; Slow 1100mV 85C Model Minimum Pulse Width Summary ;
++-------+--------+----------------------------------+
+; Clock ; Slack  ; End Point TNS                    ;
++-------+--------+----------------------------------+
+; clk   ; -2.225 ; -12884.158                       ;
++-------+--------+----------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Setup Times                                                              ;
++------------+------------+--------+--------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++------------+------------+--------+--------+------------+-----------------+
+; In1[*]     ; clk        ; 0.905  ; 1.362  ; Rise       ; clk             ;
+;  In1[0]    ; clk        ; -0.272 ; 0.153  ; Rise       ; clk             ;
+;  In1[1]    ; clk        ; 0.051  ; 0.457  ; Rise       ; clk             ;
+;  In1[2]    ; clk        ; -0.447 ; -0.061 ; Rise       ; clk             ;
+;  In1[3]    ; clk        ; 0.610  ; 0.954  ; Rise       ; clk             ;
+;  In1[4]    ; clk        ; 0.295  ; 0.644  ; Rise       ; clk             ;
+;  In1[5]    ; clk        ; 0.282  ; 0.522  ; Rise       ; clk             ;
+;  In1[6]    ; clk        ; 0.549  ; 0.764  ; Rise       ; clk             ;
+;  In1[7]    ; clk        ; 0.451  ; 0.701  ; Rise       ; clk             ;
+;  In1[8]    ; clk        ; 0.799  ; 1.111  ; Rise       ; clk             ;
+;  In1[9]    ; clk        ; 0.854  ; 1.356  ; Rise       ; clk             ;
+;  In1[10]   ; clk        ; 0.559  ; 0.817  ; Rise       ; clk             ;
+;  In1[11]   ; clk        ; 0.341  ; 0.642  ; Rise       ; clk             ;
+;  In1[12]   ; clk        ; 0.905  ; 1.362  ; Rise       ; clk             ;
+;  In1[13]   ; clk        ; 0.285  ; 0.493  ; Rise       ; clk             ;
+;  In1[14]   ; clk        ; 0.168  ; 0.396  ; Rise       ; clk             ;
+;  In1[15]   ; clk        ; 0.429  ; 0.789  ; Rise       ; clk             ;
+; clk_enable ; clk        ; 6.487  ; 8.421  ; Rise       ; clk             ;
+; reset      ; clk        ; 8.133  ; 10.605 ; Rise       ; clk             ;
++------------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Hold Times                                                               ;
++------------+------------+--------+--------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++------------+------------+--------+--------+------------+-----------------+
+; In1[*]     ; clk        ; 1.165  ; 0.834  ; Rise       ; clk             ;
+;  In1[0]    ; clk        ; 1.102  ; 0.795  ; Rise       ; clk             ;
+;  In1[1]    ; clk        ; 0.859  ; 0.601  ; Rise       ; clk             ;
+;  In1[2]    ; clk        ; 1.165  ; 0.834  ; Rise       ; clk             ;
+;  In1[3]    ; clk        ; 0.206  ; -0.084 ; Rise       ; clk             ;
+;  In1[4]    ; clk        ; 0.502  ; 0.231  ; Rise       ; clk             ;
+;  In1[5]    ; clk        ; 0.623  ; 0.447  ; Rise       ; clk             ;
+;  In1[6]    ; clk        ; 0.246  ; 0.068  ; Rise       ; clk             ;
+;  In1[7]    ; clk        ; 0.334  ; 0.112  ; Rise       ; clk             ;
+;  In1[8]    ; clk        ; 0.050  ; -0.199 ; Rise       ; clk             ;
+;  In1[9]    ; clk        ; 0.004  ; -0.388 ; Rise       ; clk             ;
+;  In1[10]   ; clk        ; 0.357  ; 0.139  ; Rise       ; clk             ;
+;  In1[11]   ; clk        ; 0.448  ; 0.203  ; Rise       ; clk             ;
+;  In1[12]   ; clk        ; -0.040 ; -0.374 ; Rise       ; clk             ;
+;  In1[13]   ; clk        ; 0.478  ; 0.281  ; Rise       ; clk             ;
+;  In1[14]   ; clk        ; 0.601  ; 0.404  ; Rise       ; clk             ;
+;  In1[15]   ; clk        ; 0.397  ; 0.114  ; Rise       ; clk             ;
+; clk_enable ; clk        ; 0.226  ; 0.088  ; Rise       ; clk             ;
+; reset      ; clk        ; 0.790  ; 0.757  ; Rise       ; clk             ;
++------------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                                 ;
++-----------------------------------------+------------+--------+--------+------------+-----------------+
+; Data Port                               ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------------------------------------+------------+--------+--------+------------+-----------------+
+; Denoised_Heart_Sound_Sym_2_Level_4[*]   ; clk        ; 10.274 ; 11.128 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[0]  ; clk        ; 9.901  ; 10.572 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[1]  ; clk        ; 9.097  ; 9.430  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[2]  ; clk        ; 9.723  ; 10.348 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[3]  ; clk        ; 9.429  ; 10.023 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[4]  ; clk        ; 9.067  ; 9.358  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[5]  ; clk        ; 9.564  ; 10.171 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[6]  ; clk        ; 9.391  ; 9.617  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[7]  ; clk        ; 9.230  ; 9.464  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[8]  ; clk        ; 9.277  ; 9.690  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[9]  ; clk        ; 10.156 ; 11.124 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[10] ; clk        ; 9.536  ; 10.037 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[11] ; clk        ; 9.076  ; 9.344  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[12] ; clk        ; 9.544  ; 10.105 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[13] ; clk        ; 10.274 ; 11.128 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[14] ; clk        ; 9.211  ; 9.621  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[15] ; clk        ; 8.857  ; 9.134  ; Rise       ; clk             ;
++-----------------------------------------+------------+--------+--------+------------+-----------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                        ;
++-----------------------------------------+------------+-------+--------+------------+-----------------+
+; Data Port                               ; Clock Port ; Rise  ; Fall   ; Clock Edge ; Clock Reference ;
++-----------------------------------------+------------+-------+--------+------------+-----------------+
+; Denoised_Heart_Sound_Sym_2_Level_4[*]   ; clk        ; 8.340 ; 8.556  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[0]  ; clk        ; 9.317 ; 9.906  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[1]  ; clk        ; 8.559 ; 8.830  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[2]  ; clk        ; 9.147 ; 9.696  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[3]  ; clk        ; 8.879 ; 9.396  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[4]  ; clk        ; 8.559 ; 8.804  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[5]  ; clk        ; 8.974 ; 9.449  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[6]  ; clk        ; 8.834 ; 9.010  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[7]  ; clk        ; 8.683 ; 8.870  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[8]  ; clk        ; 8.734 ; 9.087  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[9]  ; clk        ; 9.444 ; 10.150 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[10] ; clk        ; 8.950 ; 9.356  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[11] ; clk        ; 8.545 ; 8.770  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[12] ; clk        ; 8.994 ; 9.488  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[13] ; clk        ; 9.634 ; 10.364 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[14] ; clk        ; 8.679 ; 9.032  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[15] ; clk        ; 8.340 ; 8.556  ; Rise       ; clk             ;
++-----------------------------------------+------------+-------+--------+------------+-----------------+
+
+
++----------------------------------------------------+
+; Propagation Delay                                  ;
++------------+-------------+-------+----+----+-------+
+; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
++------------+-------------+-------+----+----+-------+
+; clk_enable ; ce_out      ; 5.730 ;    ;    ; 5.992 ;
++------------+-------------+-------+----+----+-------+
+
+
++----------------------------------------------------+
+; Minimum Propagation Delay                          ;
++------------+-------------+-------+----+----+-------+
+; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
++------------+-------------+-------+----+----+-------+
+; clk_enable ; ce_out      ; 5.326 ;    ;    ; 5.573 ;
++------------+-------------+-------+----+----+-------+
+
+
+----------------------------------------------
+; Slow 1100mV 85C Model Metastability Report ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
++--------------------------------------------------+
+; Slow 1100mV 0C Model Fmax Summary                ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 151.52 MHz ; 151.52 MHz      ; clk        ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++------------------------------------+
+; Slow 1100mV 0C Model Setup Summary ;
++-------+--------+-------------------+
+; Clock ; Slack  ; End Point TNS     ;
++-------+--------+-------------------+
+; clk   ; -5.600 ; -10650.627        ;
++-------+--------+-------------------+
+
+
++-----------------------------------+
+; Slow 1100mV 0C Model Hold Summary ;
++-------+-------+-------------------+
+; Clock ; Slack ; End Point TNS     ;
++-------+-------+-------------------+
+; clk   ; 0.223 ; 0.000             ;
++-------+-------+-------------------+
+
+
+-----------------------------------------
+; Slow 1100mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Slow 1100mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++--------------------------------------------------+
+; Slow 1100mV 0C Model Minimum Pulse Width Summary ;
++-------+--------+---------------------------------+
+; Clock ; Slack  ; End Point TNS                   ;
++-------+--------+---------------------------------+
+; clk   ; -2.225 ; -13508.016                      ;
++-------+--------+---------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Setup Times                                                              ;
++------------+------------+--------+--------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++------------+------------+--------+--------+------------+-----------------+
+; In1[*]     ; clk        ; 0.744  ; 1.261  ; Rise       ; clk             ;
+;  In1[0]    ; clk        ; -0.397 ; 0.045  ; Rise       ; clk             ;
+;  In1[1]    ; clk        ; -0.091 ; 0.345  ; Rise       ; clk             ;
+;  In1[2]    ; clk        ; -0.638 ; -0.229 ; Rise       ; clk             ;
+;  In1[3]    ; clk        ; 0.441  ; 0.830  ; Rise       ; clk             ;
+;  In1[4]    ; clk        ; 0.149  ; 0.520  ; Rise       ; clk             ;
+;  In1[5]    ; clk        ; 0.077  ; 0.388  ; Rise       ; clk             ;
+;  In1[6]    ; clk        ; 0.342  ; 0.625  ; Rise       ; clk             ;
+;  In1[7]    ; clk        ; 0.233  ; 0.553  ; Rise       ; clk             ;
+;  In1[8]    ; clk        ; 0.601  ; 0.986  ; Rise       ; clk             ;
+;  In1[9]    ; clk        ; 0.693  ; 1.243  ; Rise       ; clk             ;
+;  In1[10]   ; clk        ; 0.355  ; 0.679  ; Rise       ; clk             ;
+;  In1[11]   ; clk        ; 0.133  ; 0.483  ; Rise       ; clk             ;
+;  In1[12]   ; clk        ; 0.744  ; 1.261  ; Rise       ; clk             ;
+;  In1[13]   ; clk        ; 0.093  ; 0.354  ; Rise       ; clk             ;
+;  In1[14]   ; clk        ; -0.026 ; 0.247  ; Rise       ; clk             ;
+;  In1[15]   ; clk        ; 0.258  ; 0.668  ; Rise       ; clk             ;
+; clk_enable ; clk        ; 6.114  ; 8.228  ; Rise       ; clk             ;
+; reset      ; clk        ; 7.635  ; 10.303 ; Rise       ; clk             ;
++------------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++------------+------------+-------+--------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise  ; Fall   ; Clock Edge ; Clock Reference ;
++------------+------------+-------+--------+------------+-----------------+
+; In1[*]     ; clk        ; 1.332 ; 0.985  ; Rise       ; clk             ;
+;  In1[0]    ; clk        ; 1.213 ; 0.892  ; Rise       ; clk             ;
+;  In1[1]    ; clk        ; 0.991 ; 0.718  ; Rise       ; clk             ;
+;  In1[2]    ; clk        ; 1.332 ; 0.985  ; Rise       ; clk             ;
+;  In1[3]    ; clk        ; 0.355 ; 0.028  ; Rise       ; clk             ;
+;  In1[4]    ; clk        ; 0.629 ; 0.336  ; Rise       ; clk             ;
+;  In1[5]    ; clk        ; 0.810 ; 0.584  ; Rise       ; clk             ;
+;  In1[6]    ; clk        ; 0.432 ; 0.187  ; Rise       ; clk             ;
+;  In1[7]    ; clk        ; 0.525 ; 0.254  ; Rise       ; clk             ;
+;  In1[8]    ; clk        ; 0.223 ; -0.085 ; Rise       ; clk             ;
+;  In1[9]    ; clk        ; 0.150 ; -0.298 ; Rise       ; clk             ;
+;  In1[10]   ; clk        ; 0.537 ; 0.288  ; Rise       ; clk             ;
+;  In1[11]   ; clk        ; 0.636 ; 0.358  ; Rise       ; clk             ;
+;  In1[12]   ; clk        ; 0.108 ; -0.277 ; Rise       ; clk             ;
+;  In1[13]   ; clk        ; 0.649 ; 0.413  ; Rise       ; clk             ;
+;  In1[14]   ; clk        ; 0.774 ; 0.533  ; Rise       ; clk             ;
+;  In1[15]   ; clk        ; 0.552 ; 0.222  ; Rise       ; clk             ;
+; clk_enable ; clk        ; 0.378 ; 0.162  ; Rise       ; clk             ;
+; reset      ; clk        ; 1.021 ; 0.969  ; Rise       ; clk             ;
++------------+------------+-------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                                 ;
++-----------------------------------------+------------+--------+--------+------------+-----------------+
+; Data Port                               ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------------------------------------+------------+--------+--------+------------+-----------------+
+; Denoised_Heart_Sound_Sym_2_Level_4[*]   ; clk        ; 10.167 ; 11.081 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[0]  ; clk        ; 9.746  ; 10.504 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[1]  ; clk        ; 8.848  ; 9.243  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[2]  ; clk        ; 9.602  ; 10.280 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[3]  ; clk        ; 9.277  ; 9.949  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[4]  ; clk        ; 8.849  ; 9.209  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[5]  ; clk        ; 9.392  ; 10.095 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[6]  ; clk        ; 9.086  ; 9.425  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[7]  ; clk        ; 9.033  ; 9.324  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[8]  ; clk        ; 9.073  ; 9.592  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[9]  ; clk        ; 10.017 ; 11.079 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[10] ; clk        ; 9.382  ; 9.955  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[11] ; clk        ; 8.853  ; 9.170  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[12] ; clk        ; 9.380  ; 10.030 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[13] ; clk        ; 10.167 ; 11.081 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[14] ; clk        ; 9.046  ; 9.520  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[15] ; clk        ; 8.628  ; 8.962  ; Rise       ; clk             ;
++-----------------------------------------+------------+--------+--------+------------+-----------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                        ;
++-----------------------------------------+------------+-------+--------+------------+-----------------+
+; Data Port                               ; Clock Port ; Rise  ; Fall   ; Clock Edge ; Clock Reference ;
++-----------------------------------------+------------+-------+--------+------------+-----------------+
+; Denoised_Heart_Sound_Sym_2_Level_4[*]   ; clk        ; 8.144 ; 8.411  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[0]  ; clk        ; 9.182 ; 9.844  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[1]  ; clk        ; 8.346 ; 8.666  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[2]  ; clk        ; 9.046 ; 9.637  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[3]  ; clk        ; 8.750 ; 9.335  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[4]  ; clk        ; 8.368 ; 8.678  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[5]  ; clk        ; 8.824 ; 9.398  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[6]  ; clk        ; 8.566 ; 8.845  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[7]  ; clk        ; 8.514 ; 8.747  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[8]  ; clk        ; 8.557 ; 9.008  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[9]  ; clk        ; 9.325 ; 10.118 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[10] ; clk        ; 8.821 ; 9.291  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[11] ; clk        ; 8.354 ; 8.615  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[12] ; clk        ; 8.852 ; 9.424  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[13] ; clk        ; 9.545 ; 10.326 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[14] ; clk        ; 8.540 ; 8.948  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[15] ; clk        ; 8.144 ; 8.411  ; Rise       ; clk             ;
++-----------------------------------------+------------+-------+--------+------------+-----------------+
+
+
++----------------------------------------------------+
+; Propagation Delay                                  ;
++------------+-------------+-------+----+----+-------+
+; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
++------------+-------------+-------+----+----+-------+
+; clk_enable ; ce_out      ; 5.538 ;    ;    ; 5.813 ;
++------------+-------------+-------+----+----+-------+
+
+
++----------------------------------------------------+
+; Minimum Propagation Delay                          ;
++------------+-------------+-------+----+----+-------+
+; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
++------------+-------------+-------+----+----+-------+
+; clk_enable ; ce_out      ; 5.149 ;    ;    ; 5.404 ;
++------------+-------------+-------+----+----+-------+
+
+
+---------------------------------------------
+; Slow 1100mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
++-------------------------------------+
+; Fast 1100mV 85C Model Setup Summary ;
++-------+--------+--------------------+
+; Clock ; Slack  ; End Point TNS      ;
++-------+--------+--------------------+
+; clk   ; -2.553 ; -4304.998          ;
++-------+--------+--------------------+
+
+
++------------------------------------+
+; Fast 1100mV 85C Model Hold Summary ;
++-------+-------+--------------------+
+; Clock ; Slack ; End Point TNS      ;
++-------+-------+--------------------+
+; clk   ; 0.140 ; 0.000              ;
++-------+-------+--------------------+
+
+
+------------------------------------------
+; Fast 1100mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Fast 1100mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
++---------------------------------------------------+
+; Fast 1100mV 85C Model Minimum Pulse Width Summary ;
++-------+--------+----------------------------------+
+; Clock ; Slack  ; End Point TNS                    ;
++-------+--------+----------------------------------+
+; clk   ; -1.702 ; -5202.680                        ;
++-------+--------+----------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Setup Times                                                             ;
++------------+------------+--------+-------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise   ; Fall  ; Clock Edge ; Clock Reference ;
++------------+------------+--------+-------+------------+-----------------+
+; In1[*]     ; clk        ; 0.601  ; 1.349 ; Rise       ; clk             ;
+;  In1[0]    ; clk        ; -0.156 ; 0.462 ; Rise       ; clk             ;
+;  In1[1]    ; clk        ; 0.063  ; 0.688 ; Rise       ; clk             ;
+;  In1[2]    ; clk        ; -0.246 ; 0.350 ; Rise       ; clk             ;
+;  In1[3]    ; clk        ; 0.365  ; 1.006 ; Rise       ; clk             ;
+;  In1[4]    ; clk        ; 0.206  ; 0.847 ; Rise       ; clk             ;
+;  In1[5]    ; clk        ; 0.166  ; 0.726 ; Rise       ; clk             ;
+;  In1[6]    ; clk        ; 0.319  ; 0.874 ; Rise       ; clk             ;
+;  In1[7]    ; clk        ; 0.238  ; 0.806 ; Rise       ; clk             ;
+;  In1[8]    ; clk        ; 0.447  ; 1.081 ; Rise       ; clk             ;
+;  In1[9]    ; clk        ; 0.569  ; 1.349 ; Rise       ; clk             ;
+;  In1[10]   ; clk        ; 0.322  ; 0.894 ; Rise       ; clk             ;
+;  In1[11]   ; clk        ; 0.187  ; 0.763 ; Rise       ; clk             ;
+;  In1[12]   ; clk        ; 0.601  ; 1.346 ; Rise       ; clk             ;
+;  In1[13]   ; clk        ; 0.149  ; 0.674 ; Rise       ; clk             ;
+;  In1[14]   ; clk        ; 0.076  ; 0.609 ; Rise       ; clk             ;
+;  In1[15]   ; clk        ; 0.272  ; 0.910 ; Rise       ; clk             ;
+; clk_enable ; clk        ; 4.023  ; 6.173 ; Rise       ; clk             ;
+; reset      ; clk        ; 4.992  ; 7.522 ; Rise       ; clk             ;
++------------+------------+--------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Hold Times                                                               ;
++------------+------------+--------+--------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++------------+------------+--------+--------+------------+-----------------+
+; In1[*]     ; clk        ; 0.643  ; 0.088  ; Rise       ; clk             ;
+;  In1[0]    ; clk        ; 0.609  ; 0.059  ; Rise       ; clk             ;
+;  In1[1]    ; clk        ; 0.444  ; -0.087 ; Rise       ; clk             ;
+;  In1[2]    ; clk        ; 0.643  ; 0.088  ; Rise       ; clk             ;
+;  In1[3]    ; clk        ; 0.052  ; -0.539 ; Rise       ; clk             ;
+;  In1[4]    ; clk        ; 0.239  ; -0.334 ; Rise       ; clk             ;
+;  In1[5]    ; clk        ; 0.325  ; -0.191 ; Rise       ; clk             ;
+;  In1[6]    ; clk        ; 0.084  ; -0.433 ; Rise       ; clk             ;
+;  In1[7]    ; clk        ; 0.154  ; -0.384 ; Rise       ; clk             ;
+;  In1[8]    ; clk        ; -0.018 ; -0.593 ; Rise       ; clk             ;
+;  In1[9]    ; clk        ; -0.120 ; -0.801 ; Rise       ; clk             ;
+;  In1[10]   ; clk        ; 0.176  ; -0.368 ; Rise       ; clk             ;
+;  In1[11]   ; clk        ; 0.213  ; -0.317 ; Rise       ; clk             ;
+;  In1[12]   ; clk        ; -0.149 ; -0.790 ; Rise       ; clk             ;
+;  In1[13]   ; clk        ; 0.237  ; -0.273 ; Rise       ; clk             ;
+;  In1[14]   ; clk        ; 0.308  ; -0.195 ; Rise       ; clk             ;
+;  In1[15]   ; clk        ; 0.153  ; -0.420 ; Rise       ; clk             ;
+; clk_enable ; clk        ; 0.143  ; -0.366 ; Rise       ; clk             ;
+; reset      ; clk        ; 0.423  ; 0.071  ; Rise       ; clk             ;
++------------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                               ;
++-----------------------------------------+------------+-------+-------+------------+-----------------+
+; Data Port                               ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------------------------------+------------+-------+-------+------------+-----------------+
+; Denoised_Heart_Sound_Sym_2_Level_4[*]   ; clk        ; 6.340 ; 7.221 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[0]  ; clk        ; 6.035 ; 6.745 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[1]  ; clk        ; 5.370 ; 5.758 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[2]  ; clk        ; 5.955 ; 6.615 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[3]  ; clk        ; 5.709 ; 6.329 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[4]  ; clk        ; 5.392 ; 5.745 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[5]  ; clk        ; 5.784 ; 6.424 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[6]  ; clk        ; 5.552 ; 5.898 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[7]  ; clk        ; 5.562 ; 5.876 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[8]  ; clk        ; 5.585 ; 6.070 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[9]  ; clk        ; 6.210 ; 7.124 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[10] ; clk        ; 5.806 ; 6.351 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[11] ; clk        ; 5.416 ; 5.754 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[12] ; clk        ; 5.773 ; 6.387 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[13] ; clk        ; 6.340 ; 7.221 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[14] ; clk        ; 5.534 ; 6.024 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[15] ; clk        ; 5.272 ; 5.593 ; Rise       ; clk             ;
++-----------------------------------------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                       ;
++-----------------------------------------+------------+-------+-------+------------+-----------------+
+; Data Port                               ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------------------------------+------------+-------+-------+------------+-----------------+
+; Denoised_Heart_Sound_Sym_2_Level_4[*]   ; clk        ; 5.015 ; 5.288 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[0]  ; clk        ; 5.734 ; 6.375 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[1]  ; clk        ; 5.107 ; 5.448 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[2]  ; clk        ; 5.656 ; 6.251 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[3]  ; clk        ; 5.427 ; 5.982 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[4]  ; clk        ; 5.139 ; 5.452 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[5]  ; clk        ; 5.475 ; 6.007 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[6]  ; clk        ; 5.275 ; 5.574 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[7]  ; clk        ; 5.280 ; 5.549 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[8]  ; clk        ; 5.308 ; 5.740 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[9]  ; clk        ; 5.820 ; 6.529 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[10] ; clk        ; 5.499 ; 5.964 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[11] ; clk        ; 5.147 ; 5.448 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[12] ; clk        ; 5.493 ; 6.049 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[13] ; clk        ; 6.003 ; 6.781 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[14] ; clk        ; 5.268 ; 5.709 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[15] ; clk        ; 5.015 ; 5.288 ; Rise       ; clk             ;
++-----------------------------------------+------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------+
+; Propagation Delay                                  ;
++------------+-------------+-------+----+----+-------+
+; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
++------------+-------------+-------+----+----+-------+
+; clk_enable ; ce_out      ; 3.495 ;    ;    ; 4.060 ;
++------------+-------------+-------+----+----+-------+
+
+
++----------------------------------------------------+
+; Minimum Propagation Delay                          ;
++------------+-------------+-------+----+----+-------+
+; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
++------------+-------------+-------+----+----+-------+
+; clk_enable ; ce_out      ; 3.292 ;    ;    ; 3.842 ;
++------------+-------------+-------+----+----+-------+
+
+
+----------------------------------------------
+; Fast 1100mV 85C Model Metastability Report ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
++------------------------------------+
+; Fast 1100mV 0C Model Setup Summary ;
++-------+--------+-------------------+
+; Clock ; Slack  ; End Point TNS     ;
++-------+--------+-------------------+
+; clk   ; -2.307 ; -3685.611         ;
++-------+--------+-------------------+
+
+
++-----------------------------------+
+; Fast 1100mV 0C Model Hold Summary ;
++-------+-------+-------------------+
+; Clock ; Slack ; End Point TNS     ;
++-------+-------+-------------------+
+; clk   ; 0.128 ; 0.000             ;
++-------+-------+-------------------+
+
+
+-----------------------------------------
+; Fast 1100mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Fast 1100mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++--------------------------------------------------+
+; Fast 1100mV 0C Model Minimum Pulse Width Summary ;
++-------+--------+---------------------------------+
+; Clock ; Slack  ; End Point TNS                   ;
++-------+--------+---------------------------------+
+; clk   ; -1.702 ; -5197.476                       ;
++-------+--------+---------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Setup Times                                                             ;
++------------+------------+--------+-------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise   ; Fall  ; Clock Edge ; Clock Reference ;
++------------+------------+--------+-------+------------+-----------------+
+; In1[*]     ; clk        ; 0.550  ; 1.287 ; Rise       ; clk             ;
+;  In1[0]    ; clk        ; -0.171 ; 0.445 ; Rise       ; clk             ;
+;  In1[1]    ; clk        ; 0.059  ; 0.678 ; Rise       ; clk             ;
+;  In1[2]    ; clk        ; -0.299 ; 0.303 ; Rise       ; clk             ;
+;  In1[3]    ; clk        ; 0.314  ; 0.955 ; Rise       ; clk             ;
+;  In1[4]    ; clk        ; 0.163  ; 0.796 ; Rise       ; clk             ;
+;  In1[5]    ; clk        ; 0.094  ; 0.673 ; Rise       ; clk             ;
+;  In1[6]    ; clk        ; 0.236  ; 0.813 ; Rise       ; clk             ;
+;  In1[7]    ; clk        ; 0.170  ; 0.761 ; Rise       ; clk             ;
+;  In1[8]    ; clk        ; 0.368  ; 1.019 ; Rise       ; clk             ;
+;  In1[9]    ; clk        ; 0.518  ; 1.279 ; Rise       ; clk             ;
+;  In1[10]   ; clk        ; 0.231  ; 0.826 ; Rise       ; clk             ;
+;  In1[11]   ; clk        ; 0.127  ; 0.716 ; Rise       ; clk             ;
+;  In1[12]   ; clk        ; 0.550  ; 1.287 ; Rise       ; clk             ;
+;  In1[13]   ; clk        ; 0.105  ; 0.650 ; Rise       ; clk             ;
+;  In1[14]   ; clk        ; 0.026  ; 0.578 ; Rise       ; clk             ;
+;  In1[15]   ; clk        ; 0.238  ; 0.867 ; Rise       ; clk             ;
+; clk_enable ; clk        ; 3.637  ; 5.634 ; Rise       ; clk             ;
+; reset      ; clk        ; 4.502  ; 6.840 ; Rise       ; clk             ;
++------------+------------+--------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Hold Times                                                               ;
++------------+------------+--------+--------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++------------+------------+--------+--------+------------+-----------------+
+; In1[*]     ; clk        ; 0.682  ; 0.120  ; Rise       ; clk             ;
+;  In1[0]    ; clk        ; 0.613  ; 0.053  ; Rise       ; clk             ;
+;  In1[1]    ; clk        ; 0.436  ; -0.094 ; Rise       ; clk             ;
+;  In1[2]    ; clk        ; 0.682  ; 0.120  ; Rise       ; clk             ;
+;  In1[3]    ; clk        ; 0.090  ; -0.501 ; Rise       ; clk             ;
+;  In1[4]    ; clk        ; 0.266  ; -0.304 ; Rise       ; clk             ;
+;  In1[5]    ; clk        ; 0.380  ; -0.150 ; Rise       ; clk             ;
+;  In1[6]    ; clk        ; 0.154  ; -0.393 ; Rise       ; clk             ;
+;  In1[7]    ; clk        ; 0.209  ; -0.348 ; Rise       ; clk             ;
+;  In1[8]    ; clk        ; 0.046  ; -0.549 ; Rise       ; clk             ;
+;  In1[9]    ; clk        ; -0.082 ; -0.765 ; Rise       ; clk             ;
+;  In1[10]   ; clk        ; 0.246  ; -0.306 ; Rise       ; clk             ;
+;  In1[11]   ; clk        ; 0.259  ; -0.281 ; Rise       ; clk             ;
+;  In1[12]   ; clk        ; -0.111 ; -0.751 ; Rise       ; clk             ;
+;  In1[13]   ; clk        ; 0.269  ; -0.256 ; Rise       ; clk             ;
+;  In1[14]   ; clk        ; 0.347  ; -0.179 ; Rise       ; clk             ;
+;  In1[15]   ; clk        ; 0.177  ; -0.396 ; Rise       ; clk             ;
+; clk_enable ; clk        ; 0.203  ; -0.338 ; Rise       ; clk             ;
+; reset      ; clk        ; 0.451  ; 0.104  ; Rise       ; clk             ;
++------------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                               ;
++-----------------------------------------+------------+-------+-------+------------+-----------------+
+; Data Port                               ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------------------------------+------------+-------+-------+------------+-----------------+
+; Denoised_Heart_Sound_Sym_2_Level_4[*]   ; clk        ; 6.053 ; 6.807 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[0]  ; clk        ; 5.765 ; 6.360 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[1]  ; clk        ; 5.015 ; 5.379 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[2]  ; clk        ; 5.677 ; 6.238 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[3]  ; clk        ; 5.471 ; 5.979 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[4]  ; clk        ; 5.111 ; 5.405 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[5]  ; clk        ; 5.544 ; 6.066 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[6]  ; clk        ; 5.199 ; 5.508 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[7]  ; clk        ; 5.238 ; 5.524 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[8]  ; clk        ; 5.315 ; 5.722 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[9]  ; clk        ; 5.965 ; 6.722 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[10] ; clk        ; 5.520 ; 5.993 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[11] ; clk        ; 5.071 ; 5.387 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[12] ; clk        ; 5.520 ; 6.029 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[13] ; clk        ; 6.053 ; 6.807 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[14] ; clk        ; 5.247 ; 5.682 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[15] ; clk        ; 4.951 ; 5.236 ; Rise       ; clk             ;
++-----------------------------------------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                       ;
++-----------------------------------------+------------+-------+-------+------------+-----------------+
+; Data Port                               ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------------------------------+------------+-------+-------+------------+-----------------+
+; Denoised_Heart_Sound_Sym_2_Level_4[*]   ; clk        ; 4.710 ; 4.950 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[0]  ; clk        ; 5.475 ; 6.002 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[1]  ; clk        ; 4.771 ; 5.085 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[2]  ; clk        ; 5.389 ; 5.888 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[3]  ; clk        ; 5.199 ; 5.646 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[4]  ; clk        ; 4.871 ; 5.127 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[5]  ; clk        ; 5.245 ; 5.678 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[6]  ; clk        ; 4.941 ; 5.205 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[7]  ; clk        ; 4.970 ; 5.208 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[8]  ; clk        ; 5.051 ; 5.410 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[9]  ; clk        ; 5.589 ; 6.165 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[10] ; clk        ; 5.226 ; 5.624 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[11] ; clk        ; 4.820 ; 5.095 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[12] ; clk        ; 5.251 ; 5.704 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[13] ; clk        ; 5.728 ; 6.388 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[14] ; clk        ; 4.993 ; 5.381 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[15] ; clk        ; 4.710 ; 4.950 ; Rise       ; clk             ;
++-----------------------------------------+------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------+
+; Propagation Delay                                  ;
++------------+-------------+-------+----+----+-------+
+; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
++------------+-------------+-------+----+----+-------+
+; clk_enable ; ce_out      ; 3.316 ;    ;    ; 3.857 ;
++------------+-------------+-------+----+----+-------+
+
+
++----------------------------------------------------+
+; Minimum Propagation Delay                          ;
++------------+-------------+-------+----+----+-------+
+; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
++------------+-------------+-------+----+----+-------+
+; clk_enable ; ce_out      ; 3.118 ;    ;    ; 3.644 ;
++------------+-------------+-------+----+----+-------+
+
+
+---------------------------------------------
+; Fast 1100mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
++----------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                              ;
++------------------+------------+-------+----------+---------+---------------------+
+; Clock            ; Setup      ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+------------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -5.600     ; 0.128 ; N/A      ; N/A     ; -2.225              ;
+;  clk             ; -5.600     ; 0.128 ; N/A      ; N/A     ; -2.225              ;
+; Design-wide TNS  ; -10742.838 ; 0.0   ; 0.0      ; 0.0     ; -13508.016          ;
+;  clk             ; -10742.838 ; 0.000 ; N/A      ; N/A     ; -13508.016          ;
++------------------+------------+-------+----------+---------+---------------------+
+
+
++--------------------------------------------------------------------------+
+; Setup Times                                                              ;
++------------+------------+--------+--------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++------------+------------+--------+--------+------------+-----------------+
+; In1[*]     ; clk        ; 0.905  ; 1.362  ; Rise       ; clk             ;
+;  In1[0]    ; clk        ; -0.156 ; 0.462  ; Rise       ; clk             ;
+;  In1[1]    ; clk        ; 0.063  ; 0.688  ; Rise       ; clk             ;
+;  In1[2]    ; clk        ; -0.246 ; 0.350  ; Rise       ; clk             ;
+;  In1[3]    ; clk        ; 0.610  ; 1.006  ; Rise       ; clk             ;
+;  In1[4]    ; clk        ; 0.295  ; 0.847  ; Rise       ; clk             ;
+;  In1[5]    ; clk        ; 0.282  ; 0.726  ; Rise       ; clk             ;
+;  In1[6]    ; clk        ; 0.549  ; 0.874  ; Rise       ; clk             ;
+;  In1[7]    ; clk        ; 0.451  ; 0.806  ; Rise       ; clk             ;
+;  In1[8]    ; clk        ; 0.799  ; 1.111  ; Rise       ; clk             ;
+;  In1[9]    ; clk        ; 0.854  ; 1.356  ; Rise       ; clk             ;
+;  In1[10]   ; clk        ; 0.559  ; 0.894  ; Rise       ; clk             ;
+;  In1[11]   ; clk        ; 0.341  ; 0.763  ; Rise       ; clk             ;
+;  In1[12]   ; clk        ; 0.905  ; 1.362  ; Rise       ; clk             ;
+;  In1[13]   ; clk        ; 0.285  ; 0.674  ; Rise       ; clk             ;
+;  In1[14]   ; clk        ; 0.168  ; 0.609  ; Rise       ; clk             ;
+;  In1[15]   ; clk        ; 0.429  ; 0.910  ; Rise       ; clk             ;
+; clk_enable ; clk        ; 6.487  ; 8.421  ; Rise       ; clk             ;
+; reset      ; clk        ; 8.133  ; 10.605 ; Rise       ; clk             ;
++------------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++------------+------------+-------+--------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise  ; Fall   ; Clock Edge ; Clock Reference ;
++------------+------------+-------+--------+------------+-----------------+
+; In1[*]     ; clk        ; 1.332 ; 0.985  ; Rise       ; clk             ;
+;  In1[0]    ; clk        ; 1.213 ; 0.892  ; Rise       ; clk             ;
+;  In1[1]    ; clk        ; 0.991 ; 0.718  ; Rise       ; clk             ;
+;  In1[2]    ; clk        ; 1.332 ; 0.985  ; Rise       ; clk             ;
+;  In1[3]    ; clk        ; 0.355 ; 0.028  ; Rise       ; clk             ;
+;  In1[4]    ; clk        ; 0.629 ; 0.336  ; Rise       ; clk             ;
+;  In1[5]    ; clk        ; 0.810 ; 0.584  ; Rise       ; clk             ;
+;  In1[6]    ; clk        ; 0.432 ; 0.187  ; Rise       ; clk             ;
+;  In1[7]    ; clk        ; 0.525 ; 0.254  ; Rise       ; clk             ;
+;  In1[8]    ; clk        ; 0.223 ; -0.085 ; Rise       ; clk             ;
+;  In1[9]    ; clk        ; 0.150 ; -0.298 ; Rise       ; clk             ;
+;  In1[10]   ; clk        ; 0.537 ; 0.288  ; Rise       ; clk             ;
+;  In1[11]   ; clk        ; 0.636 ; 0.358  ; Rise       ; clk             ;
+;  In1[12]   ; clk        ; 0.108 ; -0.277 ; Rise       ; clk             ;
+;  In1[13]   ; clk        ; 0.649 ; 0.413  ; Rise       ; clk             ;
+;  In1[14]   ; clk        ; 0.774 ; 0.533  ; Rise       ; clk             ;
+;  In1[15]   ; clk        ; 0.552 ; 0.222  ; Rise       ; clk             ;
+; clk_enable ; clk        ; 0.378 ; 0.162  ; Rise       ; clk             ;
+; reset      ; clk        ; 1.021 ; 0.969  ; Rise       ; clk             ;
++------------+------------+-------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                                 ;
++-----------------------------------------+------------+--------+--------+------------+-----------------+
+; Data Port                               ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------------------------------------+------------+--------+--------+------------+-----------------+
+; Denoised_Heart_Sound_Sym_2_Level_4[*]   ; clk        ; 10.274 ; 11.128 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[0]  ; clk        ; 9.901  ; 10.572 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[1]  ; clk        ; 9.097  ; 9.430  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[2]  ; clk        ; 9.723  ; 10.348 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[3]  ; clk        ; 9.429  ; 10.023 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[4]  ; clk        ; 9.067  ; 9.358  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[5]  ; clk        ; 9.564  ; 10.171 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[6]  ; clk        ; 9.391  ; 9.617  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[7]  ; clk        ; 9.230  ; 9.464  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[8]  ; clk        ; 9.277  ; 9.690  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[9]  ; clk        ; 10.156 ; 11.124 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[10] ; clk        ; 9.536  ; 10.037 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[11] ; clk        ; 9.076  ; 9.344  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[12] ; clk        ; 9.544  ; 10.105 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[13] ; clk        ; 10.274 ; 11.128 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[14] ; clk        ; 9.211  ; 9.621  ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[15] ; clk        ; 8.857  ; 9.134  ; Rise       ; clk             ;
++-----------------------------------------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                       ;
++-----------------------------------------+------------+-------+-------+------------+-----------------+
+; Data Port                               ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------------------------------+------------+-------+-------+------------+-----------------+
+; Denoised_Heart_Sound_Sym_2_Level_4[*]   ; clk        ; 4.710 ; 4.950 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[0]  ; clk        ; 5.475 ; 6.002 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[1]  ; clk        ; 4.771 ; 5.085 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[2]  ; clk        ; 5.389 ; 5.888 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[3]  ; clk        ; 5.199 ; 5.646 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[4]  ; clk        ; 4.871 ; 5.127 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[5]  ; clk        ; 5.245 ; 5.678 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[6]  ; clk        ; 4.941 ; 5.205 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[7]  ; clk        ; 4.970 ; 5.208 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[8]  ; clk        ; 5.051 ; 5.410 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[9]  ; clk        ; 5.589 ; 6.165 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[10] ; clk        ; 5.226 ; 5.624 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[11] ; clk        ; 4.820 ; 5.095 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[12] ; clk        ; 5.251 ; 5.704 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[13] ; clk        ; 5.728 ; 6.388 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[14] ; clk        ; 4.993 ; 5.381 ; Rise       ; clk             ;
+;  Denoised_Heart_Sound_Sym_2_Level_4[15] ; clk        ; 4.710 ; 4.950 ; Rise       ; clk             ;
++-----------------------------------------+------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------+
+; Propagation Delay                                  ;
++------------+-------------+-------+----+----+-------+
+; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
++------------+-------------+-------+----+----+-------+
+; clk_enable ; ce_out      ; 5.730 ;    ;    ; 5.992 ;
++------------+-------------+-------+----+----+-------+
+
+
++----------------------------------------------------+
+; Minimum Propagation Delay                          ;
++------------+-------------+-------+----+----+-------+
+; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
++------------+-------------+-------+----+----+-------+
+; clk_enable ; ce_out      ; 3.118 ;    ;    ; 3.644 ;
++------------+-------------+-------+----+----+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                                                                                             ;
++----------------------------------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Pin                                    ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
++----------------------------------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Denoised_Heart_Sound_Sym_2_Level_4[0]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; Denoised_Heart_Sound_Sym_2_Level_4[1]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; Denoised_Heart_Sound_Sym_2_Level_4[2]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; Denoised_Heart_Sound_Sym_2_Level_4[3]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; Denoised_Heart_Sound_Sym_2_Level_4[4]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; Denoised_Heart_Sound_Sym_2_Level_4[5]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; Denoised_Heart_Sound_Sym_2_Level_4[6]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; Denoised_Heart_Sound_Sym_2_Level_4[7]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; Denoised_Heart_Sound_Sym_2_Level_4[8]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; Denoised_Heart_Sound_Sym_2_Level_4[9]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; Denoised_Heart_Sound_Sym_2_Level_4[10] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; Denoised_Heart_Sound_Sym_2_Level_4[11] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; Denoised_Heart_Sound_Sym_2_Level_4[12] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; Denoised_Heart_Sound_Sym_2_Level_4[13] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; Denoised_Heart_Sound_Sym_2_Level_4[14] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; Denoised_Heart_Sound_Sym_2_Level_4[15] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ce_out                                 ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
++----------------------------------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+
+
++---------------------------------------------------------------+
+; Input Transition Times                                        ;
++------------+--------------+-----------------+-----------------+
+; Pin        ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++------------+--------------+-----------------+-----------------+
+; clk_enable ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; clk        ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; reset      ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; In1[0]     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; In1[1]     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; In1[2]     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; In1[3]     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; In1[4]     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; In1[5]     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; In1[6]     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; In1[7]     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; In1[8]     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; In1[9]     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; In1[10]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; In1[11]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; In1[12]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; In1[13]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; In1[14]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; In1[15]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
++------------+--------------+-----------------+-----------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1100mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
++----------------------------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin                                    ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++----------------------------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Denoised_Heart_Sound_Sym_2_Level_4[0]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0557 V           ; 0.175 V                              ; 0.114 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0557 V          ; 0.175 V                             ; 0.114 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
+; Denoised_Heart_Sound_Sym_2_Level_4[1]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
+; Denoised_Heart_Sound_Sym_2_Level_4[2]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-07 V                   ; 2.36 V              ; -0.0231 V           ; 0.14 V                               ; 0.089 V                              ; 4.52e-10 s                  ; 4.35e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.07e-07 V                  ; 2.36 V             ; -0.0231 V          ; 0.14 V                              ; 0.089 V                             ; 4.52e-10 s                 ; 4.35e-10 s                 ; No                        ; Yes                       ;
+; Denoised_Heart_Sound_Sym_2_Level_4[3]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0568 V           ; 0.173 V                              ; 0.113 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0568 V          ; 0.173 V                             ; 0.113 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
+; Denoised_Heart_Sound_Sym_2_Level_4[4]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0568 V           ; 0.173 V                              ; 0.113 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0568 V          ; 0.173 V                             ; 0.113 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
+; Denoised_Heart_Sound_Sym_2_Level_4[5]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0568 V           ; 0.173 V                              ; 0.113 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0568 V          ; 0.173 V                             ; 0.113 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
+; Denoised_Heart_Sound_Sym_2_Level_4[6]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0557 V           ; 0.175 V                              ; 0.114 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0557 V          ; 0.175 V                             ; 0.114 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
+; Denoised_Heart_Sound_Sym_2_Level_4[7]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-07 V                   ; 2.36 V              ; -0.0231 V           ; 0.14 V                               ; 0.089 V                              ; 4.52e-10 s                  ; 4.35e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.07e-07 V                  ; 2.36 V             ; -0.0231 V          ; 0.14 V                              ; 0.089 V                             ; 4.52e-10 s                 ; 4.35e-10 s                 ; No                        ; Yes                       ;
+; Denoised_Heart_Sound_Sym_2_Level_4[8]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0557 V           ; 0.175 V                              ; 0.114 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0557 V          ; 0.175 V                             ; 0.114 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
+; Denoised_Heart_Sound_Sym_2_Level_4[9]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0568 V           ; 0.173 V                              ; 0.113 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0568 V          ; 0.173 V                             ; 0.113 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
+; Denoised_Heart_Sound_Sym_2_Level_4[10] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-07 V                   ; 2.36 V              ; -0.0231 V           ; 0.14 V                               ; 0.089 V                              ; 4.52e-10 s                  ; 4.35e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.07e-07 V                  ; 2.36 V             ; -0.0231 V          ; 0.14 V                              ; 0.089 V                             ; 4.52e-10 s                 ; 4.35e-10 s                 ; No                        ; Yes                       ;
+; Denoised_Heart_Sound_Sym_2_Level_4[11] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
+; Denoised_Heart_Sound_Sym_2_Level_4[12] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0568 V           ; 0.173 V                              ; 0.113 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0568 V          ; 0.173 V                             ; 0.113 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
+; Denoised_Heart_Sound_Sym_2_Level_4[13] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-07 V                   ; 2.36 V              ; -0.0231 V           ; 0.14 V                               ; 0.089 V                              ; 4.52e-10 s                  ; 4.35e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.07e-07 V                  ; 2.36 V             ; -0.0231 V          ; 0.14 V                              ; 0.089 V                             ; 4.52e-10 s                 ; 4.35e-10 s                 ; No                        ; Yes                       ;
+; Denoised_Heart_Sound_Sym_2_Level_4[14] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
+; Denoised_Heart_Sound_Sym_2_Level_4[15] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-07 V                   ; 2.36 V              ; -0.0231 V           ; 0.14 V                               ; 0.089 V                              ; 4.52e-10 s                  ; 4.35e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.07e-07 V                  ; 2.36 V             ; -0.0231 V          ; 0.14 V                              ; 0.089 V                             ; 4.52e-10 s                 ; 4.35e-10 s                 ; No                        ; Yes                       ;
+; ce_out                                 ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-07 V                   ; 2.36 V              ; -0.0231 V           ; 0.14 V                               ; 0.089 V                              ; 4.52e-10 s                  ; 4.35e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.07e-07 V                  ; 2.36 V             ; -0.0231 V          ; 0.14 V                              ; 0.089 V                             ; 4.52e-10 s                 ; 4.35e-10 s                 ; No                        ; Yes                       ;
++----------------------------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1100mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
++----------------------------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin                                    ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++----------------------------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Denoised_Heart_Sound_Sym_2_Level_4[0]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.037 V            ; 0.188 V                              ; 0.158 V                              ; 4.67e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.037 V           ; 0.188 V                             ; 0.158 V                             ; 4.67e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
+; Denoised_Heart_Sound_Sym_2_Level_4[1]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
+; Denoised_Heart_Sound_Sym_2_Level_4[2]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.49e-05 V                   ; 2.34 V              ; -0.0118 V           ; 0.182 V                              ; 0.051 V                              ; 4.81e-10 s                  ; 4.83e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.49e-05 V                  ; 2.34 V             ; -0.0118 V          ; 0.182 V                             ; 0.051 V                             ; 4.81e-10 s                 ; 4.83e-10 s                 ; Yes                       ; Yes                       ;
+; Denoised_Heart_Sound_Sym_2_Level_4[3]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.0374 V           ; 0.189 V                              ; 0.158 V                              ; 4.66e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.0374 V          ; 0.189 V                             ; 0.158 V                             ; 4.66e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
+; Denoised_Heart_Sound_Sym_2_Level_4[4]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.0374 V           ; 0.189 V                              ; 0.158 V                              ; 4.66e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.0374 V          ; 0.189 V                             ; 0.158 V                             ; 4.66e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
+; Denoised_Heart_Sound_Sym_2_Level_4[5]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.0374 V           ; 0.189 V                              ; 0.158 V                              ; 4.66e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.0374 V          ; 0.189 V                             ; 0.158 V                             ; 4.66e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
+; Denoised_Heart_Sound_Sym_2_Level_4[6]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.037 V            ; 0.188 V                              ; 0.158 V                              ; 4.67e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.037 V           ; 0.188 V                             ; 0.158 V                             ; 4.67e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
+; Denoised_Heart_Sound_Sym_2_Level_4[7]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.49e-05 V                   ; 2.34 V              ; -0.0118 V           ; 0.182 V                              ; 0.051 V                              ; 4.81e-10 s                  ; 4.83e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.49e-05 V                  ; 2.34 V             ; -0.0118 V          ; 0.182 V                             ; 0.051 V                             ; 4.81e-10 s                 ; 4.83e-10 s                 ; Yes                       ; Yes                       ;
+; Denoised_Heart_Sound_Sym_2_Level_4[8]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.037 V            ; 0.188 V                              ; 0.158 V                              ; 4.67e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.037 V           ; 0.188 V                             ; 0.158 V                             ; 4.67e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
+; Denoised_Heart_Sound_Sym_2_Level_4[9]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.0374 V           ; 0.189 V                              ; 0.158 V                              ; 4.66e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.0374 V          ; 0.189 V                             ; 0.158 V                             ; 4.66e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
+; Denoised_Heart_Sound_Sym_2_Level_4[10] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.49e-05 V                   ; 2.34 V              ; -0.0118 V           ; 0.182 V                              ; 0.051 V                              ; 4.81e-10 s                  ; 4.83e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.49e-05 V                  ; 2.34 V             ; -0.0118 V          ; 0.182 V                             ; 0.051 V                             ; 4.81e-10 s                 ; 4.83e-10 s                 ; Yes                       ; Yes                       ;
+; Denoised_Heart_Sound_Sym_2_Level_4[11] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
+; Denoised_Heart_Sound_Sym_2_Level_4[12] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.0374 V           ; 0.189 V                              ; 0.158 V                              ; 4.66e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.0374 V          ; 0.189 V                             ; 0.158 V                             ; 4.66e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
+; Denoised_Heart_Sound_Sym_2_Level_4[13] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.49e-05 V                   ; 2.34 V              ; -0.0118 V           ; 0.182 V                              ; 0.051 V                              ; 4.81e-10 s                  ; 4.83e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.49e-05 V                  ; 2.34 V             ; -0.0118 V          ; 0.182 V                             ; 0.051 V                             ; 4.81e-10 s                 ; 4.83e-10 s                 ; Yes                       ; Yes                       ;
+; Denoised_Heart_Sound_Sym_2_Level_4[14] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
+; Denoised_Heart_Sound_Sym_2_Level_4[15] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.49e-05 V                   ; 2.34 V              ; -0.0118 V           ; 0.182 V                              ; 0.051 V                              ; 4.81e-10 s                  ; 4.83e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.49e-05 V                  ; 2.34 V             ; -0.0118 V          ; 0.182 V                             ; 0.051 V                             ; 4.81e-10 s                 ; 4.83e-10 s                 ; Yes                       ; Yes                       ;
+; ce_out                                 ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.49e-05 V                   ; 2.34 V              ; -0.0118 V           ; 0.182 V                              ; 0.051 V                              ; 4.81e-10 s                  ; 4.83e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.49e-05 V                  ; 2.34 V             ; -0.0118 V          ; 0.182 V                             ; 0.051 V                             ; 4.81e-10 s                 ; 4.83e-10 s                 ; Yes                       ; Yes                       ;
++----------------------------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1100mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
++----------------------------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin                                    ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++----------------------------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Denoised_Heart_Sound_Sym_2_Level_4[0]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.121 V            ; 0.326 V                              ; 0.297 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.121 V           ; 0.326 V                             ; 0.297 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; Denoised_Heart_Sound_Sym_2_Level_4[1]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
+; Denoised_Heart_Sound_Sym_2_Level_4[2]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
+; Denoised_Heart_Sound_Sym_2_Level_4[3]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.119 V            ; 0.326 V                              ; 0.298 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.119 V           ; 0.326 V                             ; 0.298 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; Denoised_Heart_Sound_Sym_2_Level_4[4]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.119 V            ; 0.326 V                              ; 0.298 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.119 V           ; 0.326 V                             ; 0.298 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; Denoised_Heart_Sound_Sym_2_Level_4[5]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.119 V            ; 0.326 V                              ; 0.298 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.119 V           ; 0.326 V                             ; 0.298 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; Denoised_Heart_Sound_Sym_2_Level_4[6]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.121 V            ; 0.326 V                              ; 0.297 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.121 V           ; 0.326 V                             ; 0.297 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; Denoised_Heart_Sound_Sym_2_Level_4[7]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
+; Denoised_Heart_Sound_Sym_2_Level_4[8]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.121 V            ; 0.326 V                              ; 0.297 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.121 V           ; 0.326 V                             ; 0.297 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; Denoised_Heart_Sound_Sym_2_Level_4[9]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.119 V            ; 0.326 V                              ; 0.298 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.119 V           ; 0.326 V                             ; 0.298 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; Denoised_Heart_Sound_Sym_2_Level_4[10] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
+; Denoised_Heart_Sound_Sym_2_Level_4[11] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
+; Denoised_Heart_Sound_Sym_2_Level_4[12] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.119 V            ; 0.326 V                              ; 0.298 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.119 V           ; 0.326 V                             ; 0.298 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; Denoised_Heart_Sound_Sym_2_Level_4[13] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
+; Denoised_Heart_Sound_Sym_2_Level_4[14] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
+; Denoised_Heart_Sound_Sym_2_Level_4[15] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
+; ce_out                                 ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
++----------------------------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1100mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
++----------------------------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin                                    ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++----------------------------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Denoised_Heart_Sound_Sym_2_Level_4[0]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0814 V           ; 0.36 V                               ; 0.156 V                              ; 3e-10 s                     ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0814 V          ; 0.36 V                              ; 0.156 V                             ; 3e-10 s                    ; 4.34e-10 s                 ; No                        ; No                        ;
+; Denoised_Heart_Sound_Sym_2_Level_4[1]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
+; Denoised_Heart_Sound_Sym_2_Level_4[2]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
+; Denoised_Heart_Sound_Sym_2_Level_4[3]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0805 V           ; 0.358 V                              ; 0.156 V                              ; 3.01e-10 s                  ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0805 V          ; 0.358 V                             ; 0.156 V                             ; 3.01e-10 s                 ; 4.34e-10 s                 ; No                        ; No                        ;
+; Denoised_Heart_Sound_Sym_2_Level_4[4]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0805 V           ; 0.358 V                              ; 0.156 V                              ; 3.01e-10 s                  ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0805 V          ; 0.358 V                             ; 0.156 V                             ; 3.01e-10 s                 ; 4.34e-10 s                 ; No                        ; No                        ;
+; Denoised_Heart_Sound_Sym_2_Level_4[5]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0805 V           ; 0.358 V                              ; 0.156 V                              ; 3.01e-10 s                  ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0805 V          ; 0.358 V                             ; 0.156 V                             ; 3.01e-10 s                 ; 4.34e-10 s                 ; No                        ; No                        ;
+; Denoised_Heart_Sound_Sym_2_Level_4[6]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0814 V           ; 0.36 V                               ; 0.156 V                              ; 3e-10 s                     ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0814 V          ; 0.36 V                              ; 0.156 V                             ; 3e-10 s                    ; 4.34e-10 s                 ; No                        ; No                        ;
+; Denoised_Heart_Sound_Sym_2_Level_4[7]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
+; Denoised_Heart_Sound_Sym_2_Level_4[8]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0814 V           ; 0.36 V                               ; 0.156 V                              ; 3e-10 s                     ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0814 V          ; 0.36 V                              ; 0.156 V                             ; 3e-10 s                    ; 4.34e-10 s                 ; No                        ; No                        ;
+; Denoised_Heart_Sound_Sym_2_Level_4[9]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0805 V           ; 0.358 V                              ; 0.156 V                              ; 3.01e-10 s                  ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0805 V          ; 0.358 V                             ; 0.156 V                             ; 3.01e-10 s                 ; 4.34e-10 s                 ; No                        ; No                        ;
+; Denoised_Heart_Sound_Sym_2_Level_4[10] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
+; Denoised_Heart_Sound_Sym_2_Level_4[11] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
+; Denoised_Heart_Sound_Sym_2_Level_4[12] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0805 V           ; 0.358 V                              ; 0.156 V                              ; 3.01e-10 s                  ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0805 V          ; 0.358 V                             ; 0.156 V                             ; 3.01e-10 s                 ; 4.34e-10 s                 ; No                        ; No                        ;
+; Denoised_Heart_Sound_Sym_2_Level_4[13] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
+; Denoised_Heart_Sound_Sym_2_Level_4[14] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
+; Denoised_Heart_Sound_Sym_2_Level_4[15] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
+; ce_out                                 ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
++----------------------------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 83300    ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 83300    ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++-------------------------------------------------+
+; Unconstrained Paths                             ;
++---------------------------------+-------+-------+
+; Property                        ; Setup ; Hold  ;
++---------------------------------+-------+-------+
+; Illegal Clocks                  ; 0     ; 0     ;
+; Unconstrained Clocks            ; 0     ; 0     ;
+; Unconstrained Input Ports       ; 18    ; 18    ;
+; Unconstrained Input Port Paths  ; 32943 ; 32943 ;
+; Unconstrained Output Ports      ; 17    ; 17    ;
+; Unconstrained Output Port Paths ; 17    ; 17    ;
++---------------------------------+-------+-------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Mon Apr 22 12:43:52 2024
+Info: Command: quartus_sta DWT_Sym2_Level4 -c DWT_Sym2_Level4
+Info: qsta_default_script.tcl version: #1
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'DWT_Sym2_Level4.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clk clk
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow 1100mV 85C Model
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -5.467
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -5.467          -10742.838 clk 
+Info (332146): Worst-case hold slack is 0.233
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.233               0.000 clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -2.225
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.225          -12884.158 clk 
+Info: Analyzing Slow 1100mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Warning (334000): Timing characteristics of device 5CSXFC6D6F31C6 are preliminary
+Info (334004): Delay annotation completed successfully
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -5.600
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -5.600          -10650.627 clk 
+Info (332146): Worst-case hold slack is 0.223
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.223               0.000 clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -2.225
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.225          -13508.016 clk 
+Info: Analyzing Fast 1100mV 85C Model
+Info (334003): Started post-fitting delay annotation
+Warning (334000): Timing characteristics of device 5CSXFC6D6F31C6 are preliminary
+Info (334004): Delay annotation completed successfully
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -2.553
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.553           -4304.998 clk 
+Info (332146): Worst-case hold slack is 0.140
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.140               0.000 clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.702
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -1.702           -5202.680 clk 
+Info: Analyzing Fast 1100mV 0C Model
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -2.307
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.307           -3685.611 clk 
+Info (332146): Worst-case hold slack is 0.128
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.128               0.000 clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.702
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -1.702           -5197.476 clk 
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 5340 megabytes
+    Info: Processing ended: Mon Apr 22 12:44:08 2024
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:33
+
+

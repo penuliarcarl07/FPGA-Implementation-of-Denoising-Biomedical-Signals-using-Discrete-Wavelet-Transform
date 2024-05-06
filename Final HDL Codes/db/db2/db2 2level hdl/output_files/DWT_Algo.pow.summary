@@ -1,0 +1,12 @@
+PowerPlay Power Analyzer Status : Successful - Mon Apr 15 19:25:09 2024
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Revision Name : DWT_Algo
+Top-level Entity Name : DWT_Algo
+Family : Cyclone V
+Device : 5CSXFC6D6F31C6
+Power Models : Preliminary
+Total Thermal Power Dissipation : 419.90 mW
+Core Dynamic Thermal Power Dissipation : 0.00 mW
+Core Static Thermal Power Dissipation : 410.41 mW
+I/O Thermal Power Dissipation : 9.49 mW
+Power Estimation Confidence : Low: user provided insufficient toggle rate data

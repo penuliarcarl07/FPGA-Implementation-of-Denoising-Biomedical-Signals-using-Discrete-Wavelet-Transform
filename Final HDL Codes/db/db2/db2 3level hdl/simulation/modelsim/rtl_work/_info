@@ -1,0 +1,1328 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\hp\Desktop\ALTERA CAPSTONE\FINAL ARCHI HDL\FINAL_DB2\db2_3level\simulation\modelsim
+vAbsolute_Value1
+Ico?UbUSOcz7LjNfCUPNOo0
+VWV02mCCXc>:E54BElj^:R0
+Z1 dC:\Users\hp\Desktop\ALTERA CAPSTONE\FINAL ARCHI HDL\FINAL_DB2\db2_3level\simulation\modelsim
+Z2 w1713355469
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Absolute_Value1.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Absolute_Value1.v
+L0 21
+Z3 OV;L;10.1d;51
+r1
+31
+Z4 o-vlog01compat -work work -O0
+Z5 !s92 -vlog01compat -work work {+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level} -O0
+n@absolute_@value1
+!i10b 1
+!s100 @lhZNaN^M;M0CWEP;5Wmm3
+!s85 0
+!s108 1713874056.914000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Absolute_Value1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Absolute_Value1.v|
+!s101 -O0
+valpha1st_Level_Decomp
+INNUkj<n9]>o;mOXR?:X]33
+Va;YcJLz=Gb]FR]8S0kb:83
+R1
+Z6 w1713355470
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/alpha1st_Level_Decomp.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/alpha1st_Level_Decomp.v
+L0 21
+R3
+r1
+31
+R4
+R5
+nalpha1st_@level_@decomp
+!i10b 1
+!s100 Z`kn;E4NGZ75gZOd9Bk8?3
+!s85 0
+!s108 1713874056.774000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/alpha1st_Level_Decomp.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/alpha1st_Level_Decomp.v|
+!s101 -O0
+valpha1st_Level_Recon
+Ik1=?kH[ADOBQCL:mM>E`B2
+VjiT=Agb=I]TSA8L<OH@B>0
+R1
+R6
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/alpha1st_Level_Recon.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/alpha1st_Level_Recon.v
+L0 21
+R3
+r1
+31
+R4
+R5
+nalpha1st_@level_@recon
+!i10b 1
+!s100 `dMX8?^44UmmjfBMJQ[O<1
+!s85 0
+!s108 1713874056.644000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/alpha1st_Level_Recon.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/alpha1st_Level_Recon.v|
+!s101 -O0
+valpha2nd_Level_Decomp
+I^9]bAQ2lgBJkNG9USE@cz0
+VEKPWC1e=3VH1dAj[T9Ahg3
+R1
+R6
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/alpha2nd_Level_Decomp.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/alpha2nd_Level_Decomp.v
+L0 21
+R3
+r1
+31
+R4
+R5
+nalpha2nd_@level_@decomp
+!i10b 1
+!s100 nF_LKYGj@aj;]GC<b`Q?b1
+!s85 0
+!s108 1713874056.498000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/alpha2nd_Level_Decomp.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/alpha2nd_Level_Decomp.v|
+!s101 -O0
+valpha2nd_Level_Recon
+I?0CmXb5BQ=@N7bZMBgLXf0
+VbDP@SiMh8G@NeR?bbmCHN3
+R1
+R6
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/alpha2nd_Level_Recon.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/alpha2nd_Level_Recon.v
+L0 21
+R3
+r1
+31
+R4
+R5
+nalpha2nd_@level_@recon
+!i10b 1
+!s100 M=2bX[_:FP[2GD??5?LWA2
+!s85 0
+!s108 1713874056.344000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/alpha2nd_Level_Recon.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/alpha2nd_Level_Recon.v|
+!s101 -O0
+valpha3rd_Level_Decomp
+Iij97QY`FK5c2BAOL3k34m0
+VHHD8BDFPcb:PaH_I=2MHZ0
+R1
+R6
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/alpha3rd_Level_Decomp.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/alpha3rd_Level_Decomp.v
+L0 21
+R3
+r1
+31
+R4
+R5
+nalpha3rd_@level_@decomp
+!i10b 1
+!s100 6c13bfgNT1WU>k40GKKBf2
+!s85 0
+!s108 1713874056.198000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/alpha3rd_Level_Decomp.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/alpha3rd_Level_Decomp.v|
+!s101 -O0
+valpha3rd_Level_Recon
+Ib]4o@XO<QV@Td5213`DWS2
+V^ZC?MUiUghLNbIfE0KWnK3
+R1
+R6
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/alpha3rd_Level_Recon.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/alpha3rd_Level_Recon.v
+L0 21
+R3
+r1
+31
+R4
+R5
+nalpha3rd_@level_@recon
+!i10b 1
+!s100 51egJmK3;M[i=fDnME[JT1
+!s85 0
+!s108 1713874056.043000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/alpha3rd_Level_Recon.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/alpha3rd_Level_Recon.v|
+!s101 -O0
+vData_Sorter1
+IjW_hLY1OY<[9LWi9nY1PF2
+V<P>0bXd:K]zYB?]1L@nZa0
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter1.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter1.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@data_@sorter1
+!i10b 1
+!s100 5=Z:86X`lCo]F>bY6_z1H1
+!s85 0
+!s108 1713874055.903000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter1.v|
+!s101 -O0
+vData_Sorter10
+I0=QC2PilJ:LZAKi^dn]Wc0
+VaBHnb=R5GJ6SCPl@9n5h[3
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter10.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter10.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@data_@sorter10
+!i10b 1
+!s100 F^z:>gbThHLBS6Co@odfK3
+!s85 0
+!s108 1713874055.773000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter10.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter10.v|
+!s101 -O0
+vData_Sorter11
+INa>@@M=Q2231zQRGBKPE93
+V;P92DcMbJeLF5GU>[84Fh0
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter11.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter11.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@data_@sorter11
+!i10b 1
+!s100 7BkI49Eo3=L4P`AUd9VKa0
+!s85 0
+!s108 1713874055.633000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter11.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter11.v|
+!s101 -O0
+vData_Sorter12
+Ic5EIOc1e@UFQ599EQ1>3G0
+V?2Zh>6SD4hcKF974lU@d90
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter12.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter12.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@data_@sorter12
+!i10b 1
+!s100 TX7]9JOPnUnhkVG>=<bOQ1
+!s85 0
+!s108 1713874055.497000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter12.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter12.v|
+!s101 -O0
+vData_Sorter13
+I]ZPISHQnAD4dcLXD1WzJ_0
+Vk0_XfcT4NJW3bNWdm@VFA0
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter13.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter13.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@data_@sorter13
+!i10b 1
+!s100 LZLEd=LQO>COJa[i0IG=00
+!s85 0
+!s108 1713874055.143000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter13.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter13.v|
+!s101 -O0
+vData_Sorter14
+ImQY=cKc<FKVgFe?JCgMnm0
+V=i[iIQc33OI=;hiBfjzLH1
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter14.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter14.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@data_@sorter14
+!i10b 1
+!s100 l=iTEAb6fE7NDhVYakKRk0
+!s85 0
+!s108 1713874054.943000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter14.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter14.v|
+!s101 -O0
+vData_Sorter15
+IiGD>KI`9jaK5:kNLmF`^23
+VcQNieIYZ34Z`hC^o]_9J;3
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter15.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter15.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@data_@sorter15
+!i10b 1
+!s100 Fo40h;]6hDi[kLBIQgChc0
+!s85 0
+!s108 1713874054.773000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter15.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter15.v|
+!s101 -O0
+vData_Sorter16
+IH9:Q_d736:M?=HHPDkh[O1
+VY:;5;7GNBHMk93PKQlDca0
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter16.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter16.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@data_@sorter16
+!i10b 1
+!s100 9J`_]ao6AjaO_RBfl0[:S1
+!s85 0
+!s108 1713874054.613000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter16.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter16.v|
+!s101 -O0
+vData_Sorter17
+I3kZDW;GmdKC0k3bz9T81n1
+VYKKb^F89N8`^W=R7LmVRo1
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter17.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter17.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@data_@sorter17
+!i10b 1
+!s100 QH^:=@ne:X27QeVz2PH<E0
+!s85 0
+!s108 1713874054.243000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter17.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter17.v|
+!s101 -O0
+vData_Sorter18
+I=H6k<[loCX6P9^0zlM[V23
+VMWYh;4mbL94^mKU?cSU_80
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter18.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter18.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@data_@sorter18
+!i10b 1
+!s100 >[ciX05oYeQEhbOWYkFN83
+!s85 0
+!s108 1713874053.672000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter18.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter18.v|
+!s101 -O0
+vData_Sorter19
+IWmNAaXj4elWPQ`C3R]Omi1
+V1L[gXK;d`[DHal5BoNIoa1
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter19.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter19.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@data_@sorter19
+!i10b 1
+!s100 UCRZ;8OGHXaYbFhKKR:b12
+!s85 0
+!s108 1713874053.452000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter19.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter19.v|
+!s101 -O0
+vData_Sorter2
+IFEbf_lWG4[N@P]YC`[2680
+VK89TZ8_U975IbkCm]5g[50
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter2.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter2.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@data_@sorter2
+!i10b 1
+!s100 CMJ4LkPV6eX?7lVOL0Yf32
+!s85 0
+!s108 1713874053.122000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter2.v|
+!s101 -O0
+vData_Sorter20
+IJCWjGJVAcL:LEFDkfmK2R3
+VK]JWn]LR4K?:1zRBMiID43
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter20.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter20.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@data_@sorter20
+!i10b 1
+!s100 l]bo]9OH3^DEC87<TnT=[3
+!s85 0
+!s108 1713874052.896000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter20.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter20.v|
+!s101 -O0
+vData_Sorter21
+If?D::ohHE^dXL5ho?gUD?2
+V]I<e4ZSKeSikl=n]hfY5D0
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter21.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter21.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@data_@sorter21
+!i10b 1
+!s100 h528699hn3d@?d1n3A>II3
+!s85 0
+!s108 1713874052.596000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter21.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter21.v|
+!s101 -O0
+vData_Sorter22
+IBkQ4022fS621`=fdYDbf;2
+V9KL?QmB=bYQCLRL>z=D961
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter22.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter22.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@data_@sorter22
+!i10b 1
+!s100 neDV:X60]7C7PI`84KCfX1
+!s85 0
+!s108 1713874052.461000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter22.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter22.v|
+!s101 -O0
+vData_Sorter23
+IP9mOz0Wo2d8Vj<NU>YE^42
+V>4_UaJBUQ3Z4L7z1T[O<I0
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter23.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter23.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@data_@sorter23
+!i10b 1
+!s100 h7aE5aR^g0L8b_JN5]7KT3
+!s85 0
+!s108 1713874052.311000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter23.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter23.v|
+!s101 -O0
+vData_Sorter24
+ISQYo3MVAflmEeDPkW2alB2
+VVn4jboFToehk=aeYZh]K>3
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter24.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter24.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@data_@sorter24
+!i10b 1
+!s100 UeN1ZDFNak?E9j2kA6>U83
+!s85 0
+!s108 1713874052.181000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter24.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter24.v|
+!s101 -O0
+vData_Sorter3
+I:P6zP:l`W:dmeG[]>7@MC1
+Vgd?imk^c@7Q7BVag2iH8j3
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter3.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter3.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@data_@sorter3
+!i10b 1
+!s100 k33iMI?2O[;6IdhMeW?251
+!s85 0
+!s108 1713874052.041000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter3.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter3.v|
+!s101 -O0
+vData_Sorter4
+IlcYLCFFO3^Z2Slg3VD:ga3
+VBofViIz<^BoQ4J1EQhbDo1
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter4.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter4.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@data_@sorter4
+!i10b 1
+!s100 YJK_DaB?I^cEXhDgkEec`1
+!s85 0
+!s108 1713874051.911000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter4.v|
+!s101 -O0
+vData_Sorter5
+IjRgg5ES2bCc:eHoQWK;o]3
+VTQi`R=JiSYH8]gKFh00oQ3
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter5.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter5.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@data_@sorter5
+!i10b 1
+!s100 dH`?zWX1@G?[[MYmdANE23
+!s85 0
+!s108 1713874051.771000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter5.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter5.v|
+!s101 -O0
+vData_Sorter6
+I?cBVSz[mDa4iAT]CI1EJS3
+VK;mc>UW:So]giUzA[VlX>1
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter6.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter6.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@data_@sorter6
+!i10b 1
+!s100 NGj>3f9R:A52TBP9_b[2Z1
+!s85 0
+!s108 1713874051.641000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter6.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter6.v|
+!s101 -O0
+vData_Sorter7
+Ia;Y=fjQ6^C_JBf=kcJKg32
+V8jR?UHChcEzCFhi?P9ljD0
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter7.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter7.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@data_@sorter7
+!i10b 1
+!s100 XiECM9`:lN87VV``eJmfa2
+!s85 0
+!s108 1713874051.511000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter7.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter7.v|
+!s101 -O0
+vData_Sorter8
+Ihgf92W99UOCnRe:10HZh62
+VJJkMgo<;NBmfo_FKH;9X63
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter8.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter8.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@data_@sorter8
+!i10b 1
+!s100 WBLUa[iDjbkVk>T1Y6:W[3
+!s85 0
+!s108 1713874051.371000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter8.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter8.v|
+!s101 -O0
+vData_Sorter9
+I:Peh]mMfMdji1GVafjNC=3
+VzgWjUf8?0Hh7d3[Q_F6T51
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter9.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter9.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@data_@sorter9
+!i10b 1
+!s100 5Dml:Gfz=BN;@JYnWg=ZC2
+!s85 0
+!s108 1713874051.241000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter9.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Data_Sorter9.v|
+!s101 -O0
+vDWT_db2_3level
+I7lY43nn@fe`C1?<61gL1e3
+V4dz:YBR:]njb:8a6?HMY80
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/DWT_db2_3level.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/DWT_db2_3level.v
+L0 40
+R3
+r1
+31
+R4
+R5
+n@d@w@t_db2_3level
+!i10b 1
+!s100 C1^`MAKzo0[4K5z_[Nkek3
+!s85 0
+!s108 1713874051.100000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/DWT_db2_3level.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/DWT_db2_3level.v|
+!s101 -O0
+vDWT_db2_3level_tb
+!i10b 1
+!s100 H:de[R]_V_1gCLTObzgh82
+IZDYL>3YKz>H`?K470UAER1
+VPYJF<K3lNCk^fQI1VmzNl2
+R1
+w1713355784
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/DWT_db2_3level_tb.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/DWT_db2_3level_tb.v
+L0 40
+R3
+r1
+!s85 0
+31
+!s108 1713874057.054000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/DWT_db2_3level_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/DWT_db2_3level_tb.v|
+!s101 -O0
+R4
+R5
+n@d@w@t_db2_3level_tb
+vDWT_db2_3level_tc
+ILP4Jk4Sn<9E_7IT2janlL1
+VmhM88XSDezDNK7`eWjH0n2
+R1
+w1713355421
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/DWT_db2_3level_tc.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/DWT_db2_3level_tc.v
+L0 29
+R3
+r1
+31
+R4
+R5
+n@d@w@t_db2_3level_tc
+!i10b 1
+!s100 6SgCLAhFNe:a95RPB5I;@3
+!s85 0
+!s108 1713874050.960000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/DWT_db2_3level_tc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/DWT_db2_3level_tc.v|
+!s101 -O0
+vHiD_Even
+ILkhn@=[92>]=l5IWOJKFD3
+VNK59mb0U63MST;oca9Fk^0
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiD_Even.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiD_Even.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@hi@d_@even
+!i10b 1
+!s100 ZQhEQ9allGFL`Mf9jBOdo0
+!s85 0
+!s108 1713874050.820000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiD_Even.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiD_Even.v|
+!s101 -O0
+vHiD_Even_block
+I^HEE83WbciRa^1[?M`_bn2
+VibV?6hWTdQVWF_?>fgQo@3
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiD_Even_block.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiD_Even_block.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@hi@d_@even_block
+!i10b 1
+!s100 U@jCInPdbjAQXG>Sh^9N93
+!s85 0
+!s108 1713874050.680000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiD_Even_block.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiD_Even_block.v|
+!s101 -O0
+vHiD_Even_block1
+IHj1HlN2N<<]f4WhJ9i:Nl2
+VG?CoQ[JAk7WgnO:SmC:Rd2
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiD_Even_block1.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiD_Even_block1.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@hi@d_@even_block1
+!i10b 1
+!s100 Ta?jSPXJd^lb9n2eNeg5_0
+!s85 0
+!s108 1713874050.550000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiD_Even_block1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiD_Even_block1.v|
+!s101 -O0
+vHiD_Odd
+I2MM?l7QjEJKnSN`lG`0O?1
+V9;II4QP[lfi2jMY<`E3@E3
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiD_Odd.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiD_Odd.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@hi@d_@odd
+!i10b 1
+!s100 O:IMe?e[o`F?V`7k?6_n]1
+!s85 0
+!s108 1713874050.400000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiD_Odd.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiD_Odd.v|
+!s101 -O0
+vHiD_Odd_block
+IG^mI185VcdBhHSGKnY7]43
+V@^=Aa[D]9Da?EEPU2k:;l2
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiD_Odd_block.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiD_Odd_block.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@hi@d_@odd_block
+!i10b 1
+!s100 4=8jcRAXK9c5:jcD3IboK0
+!s85 0
+!s108 1713874050.180000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiD_Odd_block.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiD_Odd_block.v|
+!s101 -O0
+vHiD_Odd_block1
+I`B>mlnfZB6n3TZj1d6nij1
+V@?9dmCm_2Ie^TF4j=b:?22
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiD_Odd_block1.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiD_Odd_block1.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@hi@d_@odd_block1
+!i10b 1
+!s100 9Q6kQ6Scf<`IBDY0cgFYf3
+!s85 0
+!s108 1713874049.880000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiD_Odd_block1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiD_Odd_block1.v|
+!s101 -O0
+vHiR_Even
+IzgV7>kk4<NaZShEE0?bz03
+V;h^O1l2f?8dGO>aznY[AI1
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiR_Even.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiR_Even.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@hi@r_@even
+!i10b 1
+!s100 Co45IiF_ZWeno:QOYAdPj1
+!s85 0
+!s108 1713874049.720000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiR_Even.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiR_Even.v|
+!s101 -O0
+vHiR_Even_block
+I_FVn3bg`2i=i[WYZMhGDF1
+V0=4fY8Z4dkn[PPcZ=fl]n1
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiR_Even_block.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiR_Even_block.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@hi@r_@even_block
+!i10b 1
+!s100 3NB5<`=j2jA>=b;a3ETC00
+!s85 0
+!s108 1713874049.560000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiR_Even_block.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiR_Even_block.v|
+!s101 -O0
+vHiR_Even_block1
+IHV30c4iFTYel0o]dl?7Nh0
+VKN9AQUF^oiJ7XUed]0l?k3
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiR_Even_block1.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiR_Even_block1.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@hi@r_@even_block1
+!i10b 1
+!s100 3FYk<0`B3GGNKikzE^O:B0
+!s85 0
+!s108 1713874049.209000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiR_Even_block1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiR_Even_block1.v|
+!s101 -O0
+vHiR_Odd
+I28`h@;P=DT_UBZc745Y5=3
+V4mREZn]nGOYSEGU2j2XMB2
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiR_Odd.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiR_Odd.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@hi@r_@odd
+!i10b 1
+!s100 9`Eg^SIW?@CZ0D78eS5^h0
+!s85 0
+!s108 1713874048.939000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiR_Odd.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiR_Odd.v|
+!s101 -O0
+vHiR_Odd_block
+IBzk2R]82TJ[S8A85`R?Y10
+VF7OVhl>3?3FaiYXNj`FMn0
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiR_Odd_block.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiR_Odd_block.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@hi@r_@odd_block
+!i10b 1
+!s100 ]QPDa5ZbF6ckCQe3CB<4V1
+!s85 0
+!s108 1713874048.799000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiR_Odd_block.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiR_Odd_block.v|
+!s101 -O0
+vHiR_Odd_block1
+I:o7f7?Bj2[WE@z8J4mk@Z3
+VQY73I:8hjQm41TkC][JV;2
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiR_Odd_block1.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiR_Odd_block1.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@hi@r_@odd_block1
+!i10b 1
+!s100 UaY4CVdzPPGi<:<X7Fj>S0
+!s85 0
+!s108 1713874048.659000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiR_Odd_block1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/HiR_Odd_block1.v|
+!s101 -O0
+vLoD_Even
+IEG9=XZk8TYXJW7@]iz:R=0
+V]1lL^zPb?e_GbAHOZ>4Tl0
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoD_Even.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoD_Even.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@lo@d_@even
+!i10b 1
+!s100 Te<77Db5<8_oO:T^OiJRm3
+!s85 0
+!s108 1713874048.509000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoD_Even.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoD_Even.v|
+!s101 -O0
+vLoD_Even_block
+IPbN:^La9LnPcdzIVK4VG_2
+VQJ]PUSK8`X?2RfUnZzlE]0
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoD_Even_block.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoD_Even_block.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@lo@d_@even_block
+!i10b 1
+!s100 YmgZLZB>O`>659KXF8gTI0
+!s85 0
+!s108 1713874048.379000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoD_Even_block.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoD_Even_block.v|
+!s101 -O0
+vLoD_Even_block1
+IAU_:6b72eh?5@E`hMWUg12
+Vf41Y:_7zTc]^kg7MQCI[42
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoD_Even_block1.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoD_Even_block1.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@lo@d_@even_block1
+!i10b 1
+!s100 g;?:clC`5>:>RZJ]X2dle0
+!s85 0
+!s108 1713874048.229000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoD_Even_block1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoD_Even_block1.v|
+!s101 -O0
+vLoD_Odd
+ImKW5XKR9=ozCEiAfU`hmC1
+VTJ00^MSQUzSkz=D47_9BF2
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoD_Odd.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoD_Odd.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@lo@d_@odd
+!i10b 1
+!s100 zLWNMKeYDa;BSWfdGA0KJ1
+!s85 0
+!s108 1713874048.029000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoD_Odd.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoD_Odd.v|
+!s101 -O0
+vLoD_Odd_block
+I19_hCYL5DUbm99`_0Y[`X2
+V;jcHEo0_P7NmgB2P[hd@43
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoD_Odd_block.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoD_Odd_block.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@lo@d_@odd_block
+!i10b 1
+!s100 O]QUQmSd@GE4GjB[dEHaN0
+!s85 0
+!s108 1713874047.893000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoD_Odd_block.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoD_Odd_block.v|
+!s101 -O0
+vLoD_Odd_block1
+I[PSW668_CSSCZUa1<jN6N1
+V<IkWogeSo_>30aBAOWdZ92
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoD_Odd_block1.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoD_Odd_block1.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@lo@d_@odd_block1
+!i10b 1
+!s100 nNlG1JUP7FNo;M5BG^VAO0
+!s85 0
+!s108 1713874047.769000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoD_Odd_block1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoD_Odd_block1.v|
+!s101 -O0
+vLoR_Even
+I>eFib:a4`@>1:e=3fl2aQ3
+VH0]f5hB_0J6AUC@m?NE_V3
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoR_Even.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoR_Even.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@lo@r_@even
+!i10b 1
+!s100 =TC0S??Nl9?61]BzUNiI83
+!s85 0
+!s108 1713874047.619000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoR_Even.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoR_Even.v|
+!s101 -O0
+vLoR_Even_block
+I]4Y6;<D9iX``JT7Tg9Yc93
+VPQJ?Ib1Pfalk[Dnij;^f_0
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoR_Even_block.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoR_Even_block.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@lo@r_@even_block
+!i10b 1
+!s100 bBzgH1=jZDiaUzi7@?7UU2
+!s85 0
+!s108 1713874047.492000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoR_Even_block.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoR_Even_block.v|
+!s101 -O0
+vLoR_Even_block1
+IEA0Pd7DCF6fmkBDR8=d;T0
+V?VzmYV3g<9Nbj_J<ji1Mc0
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoR_Even_block1.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoR_Even_block1.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@lo@r_@even_block1
+!i10b 1
+!s100 oM=W7Ph]]A`VnYOSQhJ5>2
+!s85 0
+!s108 1713874047.358000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoR_Even_block1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoR_Even_block1.v|
+!s101 -O0
+vLoR_Odd
+Ia<[f<4EN=>Hc0aLg@4k<22
+VCiZ2UOUcQm:FCYPoGl?Y=2
+R1
+R2
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoR_Odd.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoR_Odd.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@lo@r_@odd
+!i10b 1
+!s100 AX9YHX=Ja:H@FR>R1OlnH0
+!s85 0
+!s108 1713874047.228000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoR_Odd.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoR_Odd.v|
+!s101 -O0
+vLoR_Odd_block
+Ig05VBSS:H[@7ES5HoaYY33
+V9BloN4nzUbn[[PmbJd0Zd0
+R1
+R6
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoR_Odd_block.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoR_Odd_block.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@lo@r_@odd_block
+!i10b 1
+!s100 3C^8o5<FgF8F?K[>1QHka0
+!s85 0
+!s108 1713874047.068000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoR_Odd_block.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoR_Odd_block.v|
+!s101 -O0
+vLoR_Odd_block1
+Iil4Mkf6K48hB@iG02>OZD0
+VBoH6LOM<JLz_UnH3=jH;c2
+R1
+R6
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoR_Odd_block1.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoR_Odd_block1.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@lo@r_@odd_block1
+!i10b 1
+!s100 mKaRAHA5>aAN0P?<][1dI2
+!s85 0
+!s108 1713874046.958000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoR_Odd_block1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/LoR_Odd_block1.v|
+!s101 -O0
+vMedian2
+IQ1[3?WXTk82;JAlTfaFi:0
+V8mXNeolioXVaSN8;@dfG>0
+R1
+R6
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Median2.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Median2.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@median2
+!i10b 1
+!s100 V3I`K8aI9EC^2Z3j?VCMM0
+!s85 0
+!s108 1713874046.818000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Median2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Median2.v|
+!s101 -O0
+vSoft_Thresholding
+IZ3cNWZiNj5OQc=CbH6Y:T0
+V0;VK_j4BB?aZG55]I@6U[0
+R1
+R6
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Soft_Thresholding.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Soft_Thresholding.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@soft_@thresholding
+!i10b 1
+!s100 W:0GAbnD<AHnid>I<oSVa2
+!s85 0
+!s108 1713874046.498000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Soft_Thresholding.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Soft_Thresholding.v|
+!s101 -O0
+vSoft_Thresholding1
+I1RA^eA2BBV18JloYYl:=C0
+V>?3JGgF61F6o9;N[Gz:c62
+R1
+R6
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Soft_Thresholding1.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Soft_Thresholding1.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@soft_@thresholding1
+!i10b 1
+!s100 1]K;@?<zz7_3zdZlChZOM2
+!s85 0
+!s108 1713874046.308000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Soft_Thresholding1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Soft_Thresholding1.v|
+!s101 -O0
+vSoft_Thresholding2
+ImXnzaV@bC`1mBAiQbX]Lo2
+Ve0AnQd_k]14`mBiKbO5Ke3
+R1
+R6
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Soft_Thresholding2.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Soft_Thresholding2.v
+L0 21
+R3
+r1
+31
+R4
+R5
+n@soft_@thresholding2
+!i10b 1
+!s100 l[DR4bYhSZI^M0e20;XJY3
+!s85 0
+!s108 1713874046.088000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Soft_Thresholding2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Soft_Thresholding2.v|
+!s101 -O0
+vThreshold_Estimator
+I5ZzF^EYod6QfKk09n@EY:3
+VQRz]MaVF@e:cCgL<?GW1R2
+R1
+R6
+8C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Threshold_Estimator.v
+FC:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Threshold_Estimator.v
+L0 21
+R3
+r1
+31
+R4
+n@threshold_@estimator
+R5
+!i10b 1
+!s100 zj?XzSW?GV3IL7TU:fZ7U0
+!s85 0
+!s108 1713874045.828000
+!s107 C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Threshold_Estimator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level|C:/Users/hp/Desktop/ALTERA CAPSTONE/FINAL ARCHI HDL/FINAL_DB2/db2_3level/Threshold_Estimator.v|
+!s101 -O0

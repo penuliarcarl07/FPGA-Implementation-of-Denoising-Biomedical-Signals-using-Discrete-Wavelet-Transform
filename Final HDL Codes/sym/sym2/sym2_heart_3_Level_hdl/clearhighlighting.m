@@ -1,0 +1,13 @@
+SLStudio.Utils.RemoveHighlighting(get_param('final_heart_sym2_level3_fixed', 'handle'));
+SLStudio.Utils.RemoveHighlighting(get_param('gm_final_heart_sym2_level3_fixed', 'handle'));
+annotate_port('gm_final_heart_sym2_level3_fixed/DWT_sym2_3_Level/1st_Level_Recon', 0, 1, '');
+annotate_port('gm_final_heart_sym2_level3_fixed/DWT_sym2_3_Level/1st_Level_Recon1', 1, 2, '');
+annotate_port('gm_final_heart_sym2_level3_fixed/DWT_sym2_3_Level/1st_Level_Recon/Delay1', 0, 1, '');
+annotate_port('gm_final_heart_sym2_level3_fixed/DWT_sym2_3_Level/1st_Level_Recon1/LoR_Even', 0, 1, '');
+annotate_port('gm_final_heart_sym2_level3_fixed/DWT_sym2_3_Level/1st_Level_Recon1/Delay1', 1, 1, '');
+annotate_port('gm_final_heart_sym2_level3_fixed/DWT_sym2_3_Level/1st_Level_Recon1/Gain', 0, 1, '');
+annotate_port('gm_final_heart_sym2_level3_fixed/DWT_sym2_3_Level/1st_Level_Recon1/RT2', 0, 1, '');
+annotate_port('gm_final_heart_sym2_level3_fixed/DWT_sym2_3_Level/1st_Level_Recon1/Add', 0, 1, '');
+annotate_port('gm_final_heart_sym2_level3_fixed/DWT_sym2_3_Level/1st_Level_Recon1/Add2', 0, 1, '');
+annotate_port('gm_final_heart_sym2_level3_fixed/DWT_sym2_3_Level/1st_Level_Recon1/LoR_Even/Add', 0, 1, '');
+annotate_port('gm_final_heart_sym2_level3_fixed/DWT_sym2_3_Level/1st_Level_Recon1/LoR_Even/Multiply', 0, 1, '');

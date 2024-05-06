@@ -1,0 +1,143 @@
+Flow report for DWT_Algo
+Mon Apr 15 19:25:09 2024
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------------+
+; Flow Summary                                                                 ;
++---------------------------------+--------------------------------------------+
+; Flow Status                     ; Successful - Mon Apr 15 19:25:09 2024      ;
+; Quartus II 64-Bit Version       ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name                   ; DWT_Algo                                   ;
+; Top-level Entity Name           ; DWT_Algo                                   ;
+; Family                          ; Cyclone V                                  ;
+; Device                          ; 5CSXFC6D6F31C6                             ;
+; Timing Models                   ; Preliminary                                ;
+; Logic utilization (in ALMs)     ; 1,806 / 41,910 ( 4 % )                     ;
+; Total registers                 ; 3519                                       ;
+; Total pins                      ; 36 / 499 ( 7 % )                           ;
+; Total virtual pins              ; 0                                          ;
+; Total block memory bits         ; 0 / 5,662,720 ( 0 % )                      ;
+; Total DSP Blocks                ; 44 / 112 ( 39 % )                          ;
+; Total HSSI RX PCSs              ; 0 / 9 ( 0 % )                              ;
+; Total HSSI PMA RX Deserializers ; 0 / 9 ( 0 % )                              ;
+; Total HSSI TX PCSs              ; 0 / 9 ( 0 % )                              ;
+; Total HSSI TX Channels          ; 0 / 9 ( 0 % )                              ;
+; Total PLLs                      ; 0 / 15 ( 0 % )                             ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                              ;
++---------------------------------+--------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 04/15/2024 19:17:31 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; DWT_Algo            ;
++-------------------+---------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                             ;
++--------------------------------------+----------------------------------------+---------------+-------------+----------------+
+; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
++--------------------------------------+----------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID                ; 35523511672682.171317985013588         ; --            ; --          ; --             ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; DWT_Algo_tb    ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; DWT_Algo_tb                            ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_FILE                  ; DWT_Algo.v                             ; --            ; --          ; DWT_Algo_tb    ;
+; EDA_TEST_BENCH_MODULE_NAME           ; DWT_Algo_tb                            ; --            ; --          ; DWT_Algo_tb    ;
+; EDA_TEST_BENCH_NAME                  ; DWT_Algo_tb                            ; --            ; --          ; eda_simulation ;
+; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --             ;
+; PARTITION_COLOR                      ; 16764057                               ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                  ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                                 ; --            ; --          ; Top            ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --          ; --             ;
+; SEARCH_PATH                          ; c:\forhdl\hdlcoder_work\hdl_prj\hdlsrc ; --            ; --          ; --             ;
++--------------------------------------+----------------------------------------+---------------+-------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 4730 MB             ; 00:00:05                           ;
+; Fitter                    ; 00:01:44     ; 1.3                     ; 5854 MB             ; 00:01:31                           ;
+; Assembler                 ; 00:00:25     ; 1.0                     ; 4795 MB             ; 00:00:11                           ;
+; TimeQuest Timing Analyzer ; 00:00:22     ; 1.4                     ; 5025 MB             ; 00:00:20                           ;
+; EDA Netlist Writer        ; 00:00:04     ; 1.0                     ; 4696 MB             ; 00:00:02                           ;
+; PowerPlay Power Analyzer  ; 00:00:18     ; 1.2                     ; 4986 MB             ; 00:00:14                           ;
+; Total                     ; 00:03:04     ; --                      ; --                  ; 00:02:23                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; DESKTOP-GVQDTTT  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; DESKTOP-GVQDTTT  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; DESKTOP-GVQDTTT  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-GVQDTTT  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-GVQDTTT  ; Windows 7 ; 6.2        ; x86_64         ;
+; PowerPlay Power Analyzer  ; DESKTOP-GVQDTTT  ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off DWT_Algo -c DWT_Algo
+quartus_fit --read_settings_files=off --write_settings_files=off DWT_Algo -c DWT_Algo
+quartus_asm --read_settings_files=off --write_settings_files=off DWT_Algo -c DWT_Algo
+quartus_sta DWT_Algo -c DWT_Algo
+quartus_eda --read_settings_files=off --write_settings_files=off DWT_Algo -c DWT_Algo
+quartus_pow --read_settings_files=on --write_settings_files=off DWT_Algo -c DWT_Algo
+
+
+
